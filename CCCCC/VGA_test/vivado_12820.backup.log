@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Dec 24 12:00:52 2016
+# Process ID: 12820
+# Log file: G:/Project_Clock/VGA_test/vivado.log
+# Journal file: G:/Project_Clock/VGA_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/Project_Clock/VGA_test/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Windows_Application/Vivado/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:46 ; elapsed = 00:00:20 . Memory (MB): peak = 815.629 ; gain = 238.250
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream
+[Sat Dec 24 12:21:04 2016] Launched synth_1...
+Run output will be captured here: G:/Project_Clock/VGA_test/project_1.runs/synth_1/runme.log
+[Sat Dec 24 12:21:04 2016] Launched impl_2...
+Run output will be captured here: G:/Project_Clock/VGA_test/project_1.runs/impl_2/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 24 12:53:55 2016...

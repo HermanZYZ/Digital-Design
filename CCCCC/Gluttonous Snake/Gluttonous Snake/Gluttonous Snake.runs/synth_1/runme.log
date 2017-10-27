@@ -1,0 +1,471 @@
+
+*** Running vivado
+    with args -log Top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+
+
+****** Vivado v2016.3 (64-bit)
+  **** SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+  **** IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11648 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:24 . Memory (MB): peak = 282.363 ; gain = 72.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Top.v:23]
+INFO: [Synth 8-638] synthesizing module 'Clock_divide' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Clock_divide.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Clock_divide' (1#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Clock_divide.v:23]
+INFO: [Synth 8-638] synthesizing module 'Button_Scaning' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Button_Scaning' (2#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:21]
+INFO: [Synth 8-638] synthesizing module 'Game_Control' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Game_Control.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Game_Control' (3#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Game_Control.v:23]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:23]
+WARNING: [Synth 8-567] referenced signal 'y_pos' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+WARNING: [Synth 8-567] referenced signal 'apple_y' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+WARNING: [Synth 8-567] referenced signal 'apple_x' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+WARNING: [Synth 8-567] referenced signal 'node_cube_y' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+WARNING: [Synth 8-567] referenced signal 'score' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+WARNING: [Synth 8-567] referenced signal 'node_cube_x' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:130]
+INFO: [Synth 8-256] done synthesizing module 'Display' (4#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Display.v:23]
+WARNING: [Synth 8-689] width (80) of port connection 'Line_VRAM' does not match port width (40) of module 'Display' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Top.v:97]
+WARNING: [Synth 8-689] width (2) of port connection 'an' does not match port width (4) of module 'Display' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Top.v:99]
+INFO: [Synth 8-638] synthesizing module 'vga_controller' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:24]
+	Parameter PAL bound to: 640 - type: integer 
+	Parameter LAF bound to: 480 - type: integer 
+	Parameter PLD bound to: 800 - type: integer 
+	Parameter LFD bound to: 521 - type: integer 
+	Parameter HPW bound to: 96 - type: integer 
+	Parameter HFP bound to: 16 - type: integer 
+	Parameter HBP bound to: 48 - type: integer 
+	Parameter VPW bound to: 2 - type: integer 
+	Parameter VFP bound to: 10 - type: integer 
+	Parameter VBP bound to: 29 - type: integer 
+WARNING: [Synth 8-151] case item 32'b00000000000000000000000000000000 is unreachable [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:187]
+WARNING: [Synth 8-567] referenced signal 'VRAM' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:186]
+WARNING: [Synth 8-567] referenced signal 'y_pos' should be on the sensitivity list [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:186]
+INFO: [Synth 8-226] default block is never used [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:235]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller' (5#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/vga_controller.v:24]
+WARNING: [Synth 8-689] width (80) of port connection 'VRAM' does not match port width (40) of module 'vga_controller' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Top.v:105]
+INFO: [Synth 8-638] synthesizing module 'Snake_Control' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Snake_Control.v:22]
+	Parameter UP bound to: 0 - type: integer 
+	Parameter DOWN bound to: 1 - type: integer 
+	Parameter LEFT bound to: 2 - type: integer 
+	Parameter RIGHT bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Snake_Control.v:62]
+INFO: [Synth 8-256] done synthesizing module 'Snake_Control' (6#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Snake_Control.v:22]
+INFO: [Synth 8-638] synthesizing module 'Eating_Apple' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/EatingApple.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Eating_Apple' (7#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/EatingApple.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Top' (8#1) [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Top.v:23]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[5]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[4]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[3]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[2]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[1]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[0]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[5]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[4]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[3]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[2]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[1]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[0]
+WARNING: [Synth 8-3331] design vga_controller has unconnected port rst_n
+WARNING: [Synth 8-3331] design vga_controller has unconnected port VRAM[39]
+WARNING: [Synth 8-3331] design vga_controller has unconnected port VRAM[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:27 . Memory (MB): peak = 319.758 ; gain = 110.387
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 319.758 ; gain = 110.387
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_2/new/Glu_Snake.xdc]
+Finished Parsing XDC File [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_2/new/Glu_Snake.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_2/new/Glu_Snake.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 614.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:45 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:45 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:36]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:41]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:46]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:51]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Button_Scan.v:56]
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "y_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA_VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA_VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA_VS" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "x_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_pos" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Snake_Control.v:299]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Snake_Control.v:299]
+INFO: [Synth 8-5544] ROM "status" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eat" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "apple_x" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "apple_y" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'mode_reg' [C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/codes/Game_Control.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:50 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 6     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 36    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 102   
+	   4 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Button_Scaning 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module Game_Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+Module vga_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 2     
+Module Snake_Control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 32    
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 96    
+	   4 Input      6 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 2     
+Module Eating_Apple 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "y_cnt_pulse0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VGA_VS" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[5]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[4]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[3]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[2]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[1]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_x[0]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[5]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[4]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[3]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[2]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[1]
+WARNING: [Synth 8-3331] design Snake_Control has unconnected port apple_y[0]
+WARNING: [Synth 8-3331] design vga_controller has unconnected port rst_n
+WARNING: [Synth 8-3331] design vga_controller has unconnected port VRAM[39]
+WARNING: [Synth 8-3331] design vga_controller has unconnected port VRAM[0]
+WARNING: [Synth 8-3332] Sequential element (clock/clkdiv_reg[26]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (clock/clkdiv_reg[27]) is unused and will be removed from module Top.
+WARNING: [Synth 8-3332] Sequential element (clock/clkdiv_reg[28]) is unused and will be removed from module Top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:01:09 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:01:24 . Memory (MB): peak = 614.277 ; gain = 404.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    30|
+|3     |LUT1   |   123|
+|4     |LUT2   |    97|
+|5     |LUT3   |    48|
+|6     |LUT4   |    71|
+|7     |LUT5   |    86|
+|8     |LUT6   |   234|
+|9     |MUXF7  |    26|
+|10    |MUXF8  |    13|
+|11    |FDRE   |   364|
+|12    |FDSE   |    18|
+|13    |LDCP   |     1|
+|14    |LDP    |     1|
+|15    |IBUF   |     6|
+|16    |OBUF   |    23|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+---------------+------+
+|      |Instance   |Module         |Cells |
++------+-----------+---------------+------+
+|1     |top        |               |  1144|
+|2     |  Apple    |Eating_Apple   |   112|
+|3     |  Button   |Button_Scaning |   309|
+|4     |  Display_ |Display        |    14|
+|5     |  Game     |Game_Control   |    10|
+|6     |  Snake    |Snake_Control  |   481|
+|7     |  VGA      |vga_controller |   127|
+|8     |  clock    |Clock_divide   |    59|
++------+-----------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 620.391 ; gain = 411.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 620.391 ; gain = 103.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:01:27 . Memory (MB): peak = 620.391 ; gain = 411.020
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
+  LDP => LDPE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:17 . Memory (MB): peak = 620.391 ; gain = 411.020
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/synth_1/Top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.578 . Memory (MB): peak = 620.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 26 15:45:52 2016...

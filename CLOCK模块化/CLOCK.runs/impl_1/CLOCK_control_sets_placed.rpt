@@ -1,0 +1,89 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Tue Dec 27 00:31:40 2016
+| Host         : DESKTOP-3Q2SFCD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CLOCK_control_sets_placed.rpt
+| Design       : CLOCK
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    88 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              36 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              48 |           16 |
+| Yes          | No                    | No                     |             100 |           27 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              24 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------+------------------------+--------------------------+------------------+----------------+
+|     Clock Signal    |      Enable Signal     |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++---------------------+------------------------+--------------------------+------------------+----------------+
+|  U1/watch_s0_reg[0] |                        |                          |                1 |              1 |
+|  U1/button[3]       |                        |                          |                1 |              1 |
+|  U1/button[0]       |                        |                          |                2 |              3 |
+|  U1/CLK             | U2/watch_m0            | U1/button[2]             |                1 |              4 |
+|  U1/CLK             | U2/watch_m1            | U1/button[2]             |                1 |              4 |
+|  U4/h_plus          |                        |                          |                2 |              4 |
+|  U4/h_plus          | U2/h_1[3]_i_2_n_0      | U2/h_1[3]_i_1_n_0        |                1 |              4 |
+|  U4/m_0_reg[0]      | U2/m_1                 |                          |                2 |              4 |
+|  U1/watch_s0_reg[0] | U2/watch_s1            | U1/button[2]             |                1 |              4 |
+|  U1/watch_s0_reg[0] | U1/E[0]                | U1/button[2]             |                2 |              4 |
+|  U1/button[1]       | U2/alarm_h1[3]_i_2_n_0 | U2/alarm_h1[3]_i_1_n_0   |                2 |              4 |
+|  U1/button[1]       | U2/alarm_m1[3]_i_1_n_0 |                          |                1 |              4 |
+|  U1/button[1]       | U4/alarm_h0_reg[3][0]  |                          |                1 |              4 |
+|  U1/button[1]       | U4/alarm_m0_reg[3][0]  |                          |                2 |              4 |
+|  U2/CLK             | U2/s_1[3]_i_1_n_0      |                          |                1 |              4 |
+|  U4/m_0_reg[0]      |                        |                          |                3 |              5 |
+|  U2/CLK             |                        |                          |                2 |              5 |
+|  clk_IBUF_BUFG      | U1/cnt[2][0]_i_1_n_0   |                          |                4 |             16 |
+|  clk_IBUF_BUFG      | U1/cnt[3][0]_i_1_n_0   |                          |                4 |             16 |
+|  clk_IBUF_BUFG      | U1/cnt[4][0]_i_1_n_0   |                          |                4 |             16 |
+|  clk_IBUF_BUFG      | U1/cnt[0][0]_i_1_n_0   |                          |                4 |             16 |
+|  clk_IBUF_BUFG      | U1/cnt[1][0]_i_1_n_0   |                          |                4 |             16 |
+|  clk_IBUF_BUFG      |                        |                          |               10 |             17 |
+|  clk_IBUF_BUFG      |                        | U2/clkdiv[30]_i_1_n_0    |                8 |             18 |
+|  clk_IBUF_BUFG      |                        | U3/clkdiv[30]_i_1__0_n_0 |                8 |             30 |
++---------------------+------------------------+--------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     2 |
+| 3      |                     1 |
+| 4      |                    12 |
+| 5      |                     2 |
+| 16+    |                     8 |
++--------+-----------------------+
+
+

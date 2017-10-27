@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/VGA/dis_shake.xst" -ofn "C:/VGA/dis_shake.syr" 

@@ -1,0 +1,53 @@
+--Forward Logic
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ForwardLogic IS
+	PORT
+	(
+		EX_REGWRITE		: IN STD_LOGIC;
+		MEM_REGWRITE	: IN STD_LOGIC;
+		EX_MEMTOREG		: IN STD_LOGIC;
+		ID_MEMTOREG		: IN STD_LOGIC;
+		
+		ID_RS			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		ID_RT			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		EX_RD			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		IF_RS			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		IF_RT			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		MEM_RD			: IN STD_LOGIC_VECTOR (4 DOWNTO 0);
+		
+		FORWARDA		: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+		FORWARDB		: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+		DELAY			: OUT STD_LOGIC
+	);
+END ENTITY ForwardLogic;
+
+ARCHITECTURE ForwardResult OF ForwardLogic IS
+BEGIN
+DELAY <= '1' WHEN (
+			(ID_MEMTOREG = '1' and ((ID_RT = IF_RS) or (ID_RT = IF_RT))
+		))
+		ELSE '0';
+
+FORWARDA <= "10" WHEN (
+			( EX_REGWRITE = '1' and EX_MEMTOREG = '0' 
+and ID_RS = EX_RD)
+		) 
+		ELSE 	"01" WHEN (
+			(MEM_REGWRITE = '1'
+and ID_RS = MEM_RD)
+		) 	
+		ELSE 	"00";
+				
+	FORWARDB <= "10" WHEN (
+			( EX_REGWRITE = '1' and EX_MEMTOREG = '0' 
+and ID_RT = EX_RD)
+		)
+		ELSE 	"01" WHEN (
+			(MEM_REGWRITE = '1' 
+ and ID_RT = MEM_RD)
+		)
+		ELSE 	"00";
+		
+END ARCHITECTURE ForwardResult;

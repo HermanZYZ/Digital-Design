@@ -1,0 +1,292 @@
+module EatingApple(
+	input wire clk_50MHz,
+	input wire [1:0] mode,
+	input wire apple_status,
+	output reg [5:0] apple_x,
+	output reg [5:0] apple_y
+);
+reg Apple_status;
+assign apple_status=Apple_status;
+
+initial 
+begin
+  Apple_status<=1;
+end
+
+
+reg [11:0] random_num;
+always @(posedge clk_50MHz)
+begin
+	random_num<=random_num+927;
+end
+
+
+always @(posedge clk_50MHz or negedge apple_status)
+begin
+    if(mode==1)
+		if(apple_status==0)
+		begin
+			apple_x<=(random_num[11:6]>38)?(random_num[11:6]-25):(random_num[11:6]==0)?1:random_num[11:6];
+			apple_y<=(random_num[5:0]>28)?(random_num[5:0]-35):((random_num[5:0]==0)?1:random_num[5:0]);
+			Apple_status<=1;
+		end
+	else
+	begin
+	     apple_x<=25;
+	     apple_y<=15;
+	end
+end
+endmodule
+
+/***************************************************************/
+module Snake_Control(
+	 input wire clk_50MHz,
+	 input wire [1:0] mode,
+	 input wire up,
+	 input wire down,
+	 input wire right,
+	 input wire left,
+	 input wire [5:0] apple_x,
+	 input wire [5:0] apple_y,
+	 output reg [5:0] cube_x[15:0],
+	 output reg [5:0] cube_y[15:0],
+	 output reg [3:0] cubenum,//最大15   
+	 output reg apple_status
+);
+
+reg [1:0] direct;//现在正在运动的方向
+reg [5:0] head_x;
+reg [5:0] head_y;
+wire UP=2'b00;
+wire DOWN=2'b01;
+wire LEFT=2'b10;
+wire RIGHT=2'b11;
+//reg change_to_left,change_to_right,change_to_up,change_to_down;
+
+initial
+begin
+	cube_x[0]<=20;
+	cube_y[0]<=15;
+	
+	cube_x[1]<=19;
+	cube_y[1]<=15;
+	
+	cube_x[2]<=18;
+	cube_y[2]<=15;
+
+	cube_x[3]<=0;
+	cube_y[3]<=0;
+	
+	cube_x[4]<=0;
+	cube_y[4]<=0;
+	
+	cube_x[5]<=0;
+	cube_y[5]<=0;
+	
+	cube_x[6]<=0;
+	cube_y[6]<=0;
+	
+	cube_x[7]<=0;
+	cube_y[7]<=0;
+	
+	cube_x[8]<=0;
+	cube_y[8]<=0;
+	
+	cube_x[9]<=0;
+	cube_y[9]<=0;
+	
+	cube_x[10]<=0;
+	cube_y[10]<=0;
+	
+	cube_x[11]<=0;
+	cube_y[11]<=0;
+	
+	cube_x[12]<=0;
+	cube_y[12]<=0;
+	
+	cube_x[13]<=0;
+	cube_y[13]<=0;
+	
+	cube_x[14]<=0;
+	cube_y[14]<=0;
+	
+	cube_x[15]<=0;
+	cube_y[15]<=0;
+	
+	cubenum<=0;//吃的苹果数量
+	direct<=DOWN;
+	head_x<=cube_x[0];
+	head_y<=cube_y[0];
+end
+
+always@(posedge clk_50MHz)
+begin
+	if(mode==1)
+	begin
+		  /**************************************************///判断出界
+		  //撞墙 
+		  if((direct==UP&&cube_y[0]==1)|(direct==DOWN&&cube_y[0]==28)|(direct==LEFT&&cube_x[0]==1)|(direct==RIGHT&&cube_x[0]==38))
+				cubenum<=15;
+		   //撞自己 
+		   else if((cube_y[0]==cube_y[1]&&cube_x[0]==cube_x[1])|
+					(cube_y[0]==cube_y[2]&&cube_x[0]==cube_x[2])|
+					(cube_y[0]==cube_y[3]&&cube_x[0]==cube_x[3]&&cubenum>3)|
+					(cube_y[0]==cube_y[4]&&cube_x[0]==cube_x[4]&&cubenum>4)|
+					(cube_y[0]==cube_y[5]&&cube_x[0]==cube_x[5]&&cubenum>5)|
+					(cube_y[0]==cube_y[6]&&cube_x[0]==cube_x[6]&&cubenum>6)|
+					(cube_y[0]==cube_y[7]&&cube_x[0]==cube_x[7]&&cubenum>7)|
+					(cube_y[0]==cube_y[8]&&cube_x[0]==cube_x[8]&&cubenum>8)|
+					(cube_y[0]==cube_y[9]&&cube_x[0]==cube_x[9]&&cubenum>9)|
+					(cube_y[0]==cube_y[10]&&cube_x[0]==cube_x[10]&&cubenum>10)|
+					(cube_y[0]==cube_y[11]&&cube_x[0]==cube_x[11]&&cubenum>11)|
+					(cube_y[0]==cube_y[12]&&cube_x[0]==cube_x[12]&&cubenum>12)|
+					(cube_y[0]==cube_y[13]&&cube_x[0]==cube_x[13]&&cubenum>13)|
+					(cube_y[0]==cube_y[14]&&cube_x[0]==cube_x[14]&&cubenum>14)|
+					(cube_y[0]==cube_y[15]&&cube_x[0]==cube_x[15]&&cubenum>15))
+	                      cubenum<=15;
+	       //正常情况下
+		   else 
+		   begin
+		   		cube_x[1]<=cube_x[0];
+				cube_y[1]<=cube_y[0];
+				
+				cube_x[2]<=cube_x[1];
+				cube_y[2]<=cube_y[1];
+				
+				cube_x[3]<=cube_x[2];
+				cube_y[3]<=cube_y[2];
+				
+				cube_x[4]<=cube_x[3];
+				cube_y[4]<=cube_y[3];
+				
+				cube_x[5]<=cube_x[4];
+				cube_y[5]<=cube_y[4];
+				
+				cube_x[6]<=cube_x[5];
+				cube_y[6]<=cube_y[5];
+				
+				cube_x[7]<=cube_x[6];
+				cube_y[7]<=cube_y[6];
+				
+				cube_x[8]<=cube_x[7];
+				cube_y[8]<=cube_y[7];
+				
+				cube_x[9]<=cube_x[8];
+				cube_y[9]<=cube_y[8];
+				
+				cube_x[10]<=cube_x[9];
+				cube_y[10]<=cube_y[9];
+				
+				cube_x[11]<=cube_x[10];
+				cube_y[11]<=cube_y[10];
+				
+				cube_x[12]<=cube_x[11];
+				cube_y[12]<=cube_y[11];
+				
+				cube_x[13]<=cube_x[12];
+				cube_y[13]<=cube_y[12];
+				
+				cube_x[14]<=cube_x[13];
+				cube_y[14]<=cube_y[13];
+				
+				cube_x[15]<=cube_x[14];
+				cube_y[15]<=cube_y[14];
+				case(direct)
+				UP: 
+				  begin    
+				      if(left==1) 
+					  begin
+                            if(cube_x[0]==1)
+                               cubenum<=15;
+                            else 
+                            begin
+                               head_x<=head_x-1;direct<=LEFT;
+                            end
+					  end
+				      if(right==1)
+					  begin
+					      if(cube_x[0]==38)
+                             cubenum<=15;
+                          else 
+                          begin
+                             head_x<=head_x+1;direct<=RIGHT;
+                          end
+					  end
+				      
+				  end
+				DOWN:
+				 begin    
+				      if(left==1) 
+                       begin
+                             if(cube_x[0]==1)
+                                cubenum<=15;
+                             else 
+                             begin
+                                head_x<=head_x-1;direct<=LEFT;
+                             end
+                       end
+                       if(right==1)
+                       begin
+                           if(cube_x[0]==38)
+                              cubenum<=15;
+                           else 
+                           begin
+                              head_x<=head_x+1;direct<=RIGHT;
+                           end
+                       end
+				  end
+				LEFT:
+				  begin    
+				      if(up==1)
+					  begin 
+					    if(head_y==1)
+					       cubenum<=15;
+					    else
+					    begin
+					  	    head_y<=head_y-1;direct<=UP;
+					  	end
+					  end
+				      if(down==1)
+					  begin
+					     if(head_y==28)
+                             cubenum<=15;
+                          else
+                          begin
+                               head_y<=head_y+1;direct<=DOWN;
+					       end
+				      end
+				  end
+				RIGHT:
+				  begin    
+                      if(up==1)
+                      begin 
+                        if(head_y==1)
+                           cubenum<=15;
+                        else
+                        begin
+                              head_y<=head_y-1;direct<=UP;
+                          end
+                      end
+                      if(down==1)
+                      begin
+                         if(head_y==28)
+                             cubenum<=15;
+                          else
+                          begin
+                               head_y<=head_y+1;direct<=DOWN;
+                           end
+                      end
+                  end
+	           endcase
+				  /**************************************************///判断是否吃到苹果  
+				  if(head_x==apple_x && head_y==apple_y)
+				  begin
+				  	apple_status<=0;
+				  	cubenum<=cubenum+1;
+				  end
+		   end 
+	end
+	
+end
+
+endmodule

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Tue Dec 27 01:10:24 2016
+# Process ID: 11640
+# Current directory: C:/Users/ZYZ/Desktop/CLOCK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12668 C:\Users\ZYZ\Desktop\CLOCK\CLOCK.xpr
+# Log file: C:/Users/ZYZ/Desktop/CLOCK/vivado.log
+# Journal file: C:/Users/ZYZ/Desktop/CLOCK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZYZ/Desktop/CLOCK/CLOCK.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returned to its previous state.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 27 01:11:36 2016...

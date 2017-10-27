@@ -1,0 +1,92 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Sun Dec 25 12:15:03 2016
+| Host         : DESKTOP-3Q2SFCD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
+| Design       : Top
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    25 |
+| Unused register locations in slices containing registers |    90 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             109 |           41 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              11 |            3 |
+| Yes          | No                    | No                     |              97 |           28 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             205 |           61 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+--------------------------------+----------------------------+------------------+----------------+
+|        Clock Signal       |          Enable Signal         |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++---------------------------+--------------------------------+----------------------------+------------------+----------------+
+|  Game/mode_reg[1]_i_1_n_0 |                                | Snake/AS[1]                |                1 |              1 |
+|  clk_25MHz__BUFG          | VGA/VGA_HS_i_2_n_0             | VGA/VGA_HS_i_1_n_0         |                1 |              1 |
+|  clk_25MHz__BUFG          | VGA/VGA_VS_i_2_n_0             | VGA/VGA_VS_i_1_n_0         |                1 |              1 |
+|  Game/mode_reg[0]/G0      |                                |                            |                1 |              1 |
+|  clock/CLK                |                                |                            |                2 |              2 |
+|  Button/button_plus       |                                |                            |                1 |              2 |
+|  clk_4Hz__BUFG            |                                |                            |                2 |              3 |
+|  clk_4Hz__BUFG            | Game/E[0]                      | Snake/cubenum[3]_i_1_n_0   |                1 |              4 |
+|  clk_4Hz__BUFG            | Snake/cube_x[0][5]_i_2_n_0     | Snake/cube_x[0][5]_i_1_n_0 |                2 |              4 |
+|  clk_50MHz__BUFG          | Game/apple_x_reg[5]            | Apple/apple_x[5]_i_1_n_0   |                2 |              4 |
+|  VGA/y_cnt_pulse          |                                | VGA/p_0_in                 |                1 |              5 |
+|  clk_25MHz__BUFG          |                                | VGA/i[4]_i_1_n_0           |                1 |              5 |
+|  VGA/y_cnt_pulse          | VGA/y_pos_n_0                  | VGA/p_0_in                 |                3 |              6 |
+|  clk_4Hz__BUFG            | Snake/cube_y[0][5]_i_1_n_0     |                            |                3 |              6 |
+|  clk_25MHz__BUFG          | VGA/x_pos_n_0                  | VGA/i[4]_i_1_n_0           |                1 |              6 |
+|  clk_25MHz__BUFG          |                                |                            |                6 |             11 |
+|  clk_25MHz__BUFG          | VGA/y_counter[10]_i_1_n_0      |                            |                5 |             11 |
+|  clk_25MHz__BUFG          | Button/delay_clk[3][0]_i_1_n_0 |                            |                4 |             16 |
+|  clk_25MHz__BUFG          | Button/delay_clk[1][0]_i_1_n_0 |                            |                4 |             16 |
+|  clk_25MHz__BUFG          | Button/delay_clk[2][0]_i_1_n_0 |                            |                4 |             16 |
+|  clk_25MHz__BUFG          | Button/delay_clk[4][0]_i_1_n_0 |                            |                4 |             16 |
+|  clk_25MHz__BUFG          | Button/delay_clk[0][0]_i_1_n_0 |                            |                4 |             16 |
+|  main_clk_IBUF_BUFG       |                                |                            |                7 |             28 |
+|  clk_50MHz__BUFG          |                                |                            |               22 |             62 |
+|  clk_4Hz__BUFG            | Snake/cube_x[1][5]_i_2_n_0     | Snake/cube_x[1][5]_i_1_n_0 |               50 |            179 |
++---------------------------+--------------------------------+----------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 2      |                     2 |
+| 3      |                     1 |
+| 4      |                     3 |
+| 5      |                     2 |
+| 6      |                     3 |
+| 11     |                     2 |
+| 16+    |                     8 |
++--------+-----------------------+
+
+

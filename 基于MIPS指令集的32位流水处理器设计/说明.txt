@@ -1,0 +1,6 @@
+1.课程设计报告有中文版和英文版，两个版本内容完全一样。中文版的术语是依据白中英的《计算机组成原理》，英文版的术语是依据David A. Patterson 和 John L. Hennessy的Computer Organization and Design。同名的doc文档和pdf文档内容完全一样。
+   因为文档内的空间限制，截图不能放的很大，请在打开文档后调整显示比例，来放大显示。建议把doc文档显示比例设置为130%，以保证截图中的器件和端口名能显示清楚。
+
+2.数据文件在pipeline文件夹中，最高层的原理图文件为pipeline.gdf，相应的波形图文件为pipeline.scf。指令存储器和数据存储器的初始化文件分别为pipeline\memory\目录下的instram.mif（指令），dataram.mif（数据）。
+
+3.PIPELINE.JPG是我的CPU的结构图

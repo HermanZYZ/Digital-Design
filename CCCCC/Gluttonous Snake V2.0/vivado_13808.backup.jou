@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 24 19:33:24 2016
+# Process ID: 13808
+# Current directory: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13052 C:\Users\ZYZ\Desktop\CCCCC\Gluttonous Snake\Gluttonous Snake\Gluttonous Snake.xpr
+# Log file: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/vivado.log
+# Journal file: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake\vivado.jou
+#-----------------------------------------------------------sstart_guiopen_project {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.xpr}
+
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a_to_g_[6]} {a_to_g_[5]} {a_to_g_[4]} {a_to_g_[3]} {a_to_g_[2]} {a_to_g_[1]} {a_to_g_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a_to_g_[6]} {a_to_g_[5]} {a_to_g_[4]} {a_to_g_[3]} {a_to_g_[2]} {a_to_g_[1]} {a_to_g_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {an_[1]} {an_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {button_in_[4]} {button_in_[3]} {button_in_[2]} {button_in_[1]} {button_in_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {VGA_B_[3]} {VGA_B_[2]} {VGA_B_[1]} {VGA_B_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {VGA_G_[3]} {VGA_G_[2]} {VGA_G_[1]} {VGA_G_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {VGA_R_[3]} {VGA_R_[2]} {VGA_R_[1]} {VGA_R_[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list main_clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list VGA_VS_]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list VGA_HS_]]
+startgroup
+set_property package_pin "" [get_ports [list  {an_[1]} {an_[0]}]]
+place_ports main_clk W5
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  VGA_HS_ {button_in_[4]} {button_in_[3]} {button_in_[2]} {button_in_[1]} {button_in_[0]}]]
+place_ports VGA_HS_ R18
+endgroup
+place_ports VGA_HS_ P19
+startgroup
+set_property package_pin "" [get_ports [list  {VGA_B_[3]} {VGA_B_[2]} {VGA_B_[1]} {VGA_B_[0]}]]
+place_ports VGA_VS_ R19
+endgroup
+place_ports {a_to_g_[6]} W7
+place_ports {a_to_g_[5]} W6
+place_ports {a_to_g_[4]} U8
+place_ports {a_to_g_[3]} V8
+place_ports {a_to_g_[2]} U5
+place_ports {a_to_g_[1]} V5
+startgroup
+set_property package_pin "" [get_ports [list  {VGA_G_[3]} {VGA_G_[2]} {VGA_G_[1]} {VGA_G_[0]}]]
+place_ports {a_to_g_[0]} U7
+endgroup
+place_ports {an_[1]} U4
+startgroup
+set_property package_pin "" [get_ports [list  {VGA_R_[3]} {VGA_R_[2]} {VGA_R_[1]} {VGA_R_[0]}]]
+place_ports {an_[0]} U2
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  main_clk VGA_HS_ VGA_VS_]]
+place_ports {button_in_[0]} U18
+endgroup
+place_ports {button_in_[1]} T18
+place_ports {button_in_[1]} U17
+set_property package_pin "" [get_ports [list  {button_in_[2]}]]
+place_ports {button_in_[1]} T18
+place_ports {button_in_[2]} U17
+place_ports {button_in_[3]} W19
+place_ports {button_in_[4]} T17
+place_ports {VGA_B_[3]} N18
+place_ports {VGA_B_[2]} L18
+place_ports {VGA_B_[1]} K18
+place_ports {VGA_B_[0]} J18
+place_ports {VGA_G_[3]} J17
+place_ports {VGA_G_[2]} H17
+place_ports {VGA_G_[1]} G17
+place_ports {VGA_G_[0]} D17
+place_ports {VGA_R_[3]} G19
+place_ports {VGA_R_[2]} H19
+place_ports {VGA_R_[1]} J19
+place_ports {VGA_R_[0]} N19
+place_ports main_clk W5
+set_property package_pin "" [get_ports [list  VGA_VS_]]
+place_ports VGA_HS_ P19
+place_ports VGA_VS_ R19
+file mkdir {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_1/new}
+close [ open {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_1/new/Glu_Snake.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_1/new/Glu_Snake.xdc}}
+set_property target_constrs_file {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.srcs/constrs_1/new/Glu_Snake.xdc} [current_fileset -constrset]
+save_constraints -force
+save_constraints -force
+save_constraints_as constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210183794980A]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210183794980A]
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROGRAM.FILE {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.runs/impl_1/Top.bit} [lindex [get_hw_devices xc7a35t_0] 0]
+program_hw_devices [lindex [get_hw_devices xc7a35t_0] 0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]

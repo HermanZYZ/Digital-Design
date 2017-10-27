@@ -1,0 +1,2453 @@
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: data.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "data.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "data"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : data
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file \"\VGA\data.v\" into library work
+Parsing module <data>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <data>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <data>.
+    Related source file is "/vga/data.v".
+        stop = 4'b0000
+        change1 = 4'b0001
+        change2 = 4'b0010
+        change3 = 4'b0100
+        change4 = 4'b1000
+        nec1 = 4'b1110
+        nec2 = 4'b1101
+        nec3 = 4'b1011
+        nec4 = 4'b0111
+        birth = 4'b1111
+    Found 4-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 11                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | clr (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit subtractor for signal <num1[3]_GND_1_o_sub_311_OUT> created at line 88.
+    Found 4-bit subtractor for signal <num2[3]_GND_1_o_sub_313_OUT> created at line 88.
+    Found 4-bit subtractor for signal <num3[3]_GND_1_o_sub_315_OUT> created at line 88.
+    Found 4-bit subtractor for signal <num1[3]_GND_1_o_sub_323_OUT> created at line 90.
+    Found 4-bit subtractor for signal <num2[3]_GND_1_o_sub_325_OUT> created at line 90.
+    Found 4-bit subtractor for signal <num3[3]_GND_1_o_sub_327_OUT> created at line 90.
+    Found 4-bit adder for signal <num3[3]_GND_1_o_add_86_OUT> created at line 76.
+    Found 4-bit adder for signal <num1[3]_GND_1_o_add_612_OUT> created at line 109.
+    Found 4-bit adder for signal <num2[3]_GND_1_o_add_614_OUT> created at line 109.
+    Found 4-bit adder for signal <num3[3]_GND_1_o_add_616_OUT> created at line 109.
+    Found 4-bit adder for signal <num1[3]_GND_1_o_add_618_OUT> created at line 110.
+    Found 4-bit adder for signal <num2[3]_GND_1_o_add_620_OUT> created at line 110.
+    Found 4-bit adder for signal <num3[3]_GND_1_o_add_622_OUT> created at line 110.
+    Found 4-bit adder for signal <num1[3]_GND_1_o_add_627_OUT> created at line 112.
+    Found 4-bit adder for signal <num2[3]_GND_1_o_add_648_OUT> created at line 113.
+    Found 4-bit adder for signal <num3[3]_GND_1_o_add_669_OUT> created at line 114.
+    Found 4-bit adder for signal <num4[3]_GND_1_o_add_690_OUT> created at line 115.
+    Found 4-bit 16-to-1 multiplexer for signal <out_data> created at line 28.
+    Found 4-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_81_OUT> created at line 76.
+    Found 4-bit 16-to-1 multiplexer for signal <n6620> created at line 76.
+    Found 4-bit 16-to-1 multiplexer for signal <num2[3]_lab[0][3]_wide_mux_462_OUT> created at line 98.
+    Found 4-bit 16-to-1 multiplexer for signal <num3[3]_lab[0][3]_wide_mux_482_OUT> created at line 99.
+    Found 4-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_517_OUT> created at line 100.
+    Found 4-bit 16-to-1 multiplexer for signal <num3[3]_lab[0][3]_wide_mux_556_OUT> created at line 102.
+    Found 4-bit 16-to-1 multiplexer for signal <n6634> created at line 112.
+    Found 4-bit 16-to-1 multiplexer for signal <n6636> created at line 113.
+    Found 4-bit 16-to-1 multiplexer for signal <n6638> created at line 114.
+    Found 4-bit 16-to-1 multiplexer for signal <n6640> created at line 115.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_726_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_728_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_730_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_732_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_734_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_798_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_800_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_802_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_804_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_806_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_870_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_872_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_874_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_876_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_878_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_942_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_944_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_946_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_948_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_950_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1014_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1016_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1018_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1020_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1022_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1086_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1088_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1090_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1092_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1094_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1158_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1160_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1162_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1164_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1166_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1230_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1232_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1234_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1236_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1238_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1302_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1304_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1306_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1308_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1310_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1374_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1376_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1378_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1380_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1382_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1446_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1448_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1450_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1452_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1454_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1518_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1520_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1522_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1524_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1526_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1590_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1592_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1594_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1596_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1598_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1662_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1664_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1666_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1668_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1670_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1734_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1736_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1738_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1740_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1742_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1806_o> created at line 100.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1808_o> created at line 99.
+    Found 1-bit 16-to-1 multiplexer for signal <num2[3]_num4[3]_Mux_1810_o> created at line 98.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_num4[3]_Mux_1812_o> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num3[3]_num4[3]_Mux_1814_o> created at line 102.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_574_OUT[3]> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_574_OUT[2]> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_574_OUT[1]> created at line 103.
+    Found 1-bit 16-to-1 multiplexer for signal <num4[3]_lab[0][3]_wide_mux_574_OUT[0]> created at line 103.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<0><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<0><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<0><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<1><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<1><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<1><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<1><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<2><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<2><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<2><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<2><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<3><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<3><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<3><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<3><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<4><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<4><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<4><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<4><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<5><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<5><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<5><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<5><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<6><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<6><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<6><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<6><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<7><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<7><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<7><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<7><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<8><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<8><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<8><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<8><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<9><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<9><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<9><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<9><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<10><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<10><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<10><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<10><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<11><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<11><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<11><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<11><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<12><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<12><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<12><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<12><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<13><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<13><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<13><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<13><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<14><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<14><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<14><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<14><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<15><3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<15><2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<15><1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<15><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <death>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <num3<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <lab<0><0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 4-bit comparator equal for signal <num3[3]_num4[3]_equal_38_o> created at line 74
+    Found 4-bit comparator equal for signal <num1[3]_num2[3]_equal_41_o> created at line 75
+    Found 4-bit comparator equal for signal <num3[3]_num4[3]_equal_83_o> created at line 76
+    Found 4-bit comparator equal for signal <num2[3]_num3[3]_equal_125_o> created at line 78
+    Found 4-bit comparator equal for signal <num1[3]_num3[3]_equal_166_o> created at line 79
+    Found 4-bit comparator equal for signal <num2[3]_num4[3]_equal_209_o> created at line 80
+    Found 4-bit comparator equal for signal <num1[3]_num4[3]_equal_252_o> created at line 81
+    Found 4-bit comparator equal for signal <num2[3]_num1[3]_equal_312_o> created at line 88
+    Found 4-bit comparator equal for signal <num3[3]_num2[3]_equal_314_o> created at line 88
+    Found 4-bit comparator equal for signal <num4[3]_num3[3]_equal_316_o> created at line 88
+    Found 4-bit comparator equal for signal <num2[3]_num1[3]_equal_324_o> created at line 90
+    Found 4-bit comparator equal for signal <num3[3]_num2[3]_equal_326_o> created at line 90
+    Found 4-bit comparator equal for signal <num4[3]_num3[3]_equal_328_o> created at line 90
+    Found 4-bit comparator equal for signal <num2[3]_num1[3]_equal_614_o> created at line 109
+    Found 4-bit comparator equal for signal <num3[3]_num2[3]_equal_616_o> created at line 109
+    Found 4-bit comparator equal for signal <num4[3]_num3[3]_equal_618_o> created at line 109
+    Found 4-bit comparator equal for signal <num2[3]_num1[3]_equal_620_o> created at line 110
+    Found 4-bit comparator equal for signal <num3[3]_num2[3]_equal_622_o> created at line 110
+    Found 4-bit comparator equal for signal <num4[3]_num3[3]_equal_624_o> created at line 110
+    Summary:
+	inferred  17 Adder/Subtractor(s).
+	inferred  73 Latch(s).
+	inferred  19 Comparator(s).
+	inferred 4012 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <data> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 17
+ 4-bit adder                                           : 11
+ 4-bit subtractor                                      : 6
+# Latches                                              : 73
+ 1-bit latch                                           : 73
+# Comparators                                          : 19
+ 4-bit comparator equal                                : 19
+# Multiplexers                                         : 4012
+ 1-bit 16-to-1 multiplexer                             : 84
+ 1-bit 2-to-1 multiplexer                              : 3623
+ 4-bit 16-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 288
+ 64-bit 2-to-1 multiplexer                             : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 17
+ 4-bit adder                                           : 11
+ 4-bit subtractor                                      : 6
+# Comparators                                          : 19
+ 4-bit comparator equal                                : 19
+# Multiplexers                                         : 4012
+ 1-bit 16-to-1 multiplexer                             : 84
+ 1-bit 2-to-1 multiplexer                              : 3623
+ 4-bit 16-to-1 multiplexer                             : 11
+ 4-bit 2-to-1 multiplexer                              : 288
+ 64-bit 2-to-1 multiplexer                             : 6
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 0100  | 0000001000
+ 1000  | 0000010000
+ 1111  | 0000100000
+ 1110  | 0001000000
+ 0111  | 0010000000
+ 1011  | 0100000000
+ 1101  | 1000000000
+---------------------
+
+Optimizing unit <data> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block data, actual ratio is 43.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : data.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 4088
+#      LUT2                        : 19
+#      LUT3                        : 68
+#      LUT4                        : 351
+#      LUT5                        : 952
+#      LUT6                        : 2236
+#      MUXF7                       : 333
+#      MUXF8                       : 128
+#      VCC                         : 1
+# FlipFlops/Latches                : 83
+#      FDC                         : 9
+#      FDP                         : 1
+#      LD                          : 8
+#      LDC                         : 49
+#      LDP                         : 16
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 9
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              82  out of  18224     0%  
+ Number of Slice LUTs:                 3626  out of   9112    39%  
+    Number used as Logic:              3626  out of   9112    39%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3628
+   Number with an unused Flip Flop:    3546  out of   3628    97%  
+   Number with an unused LUT:             2  out of   3628     0%  
+   Number of fully used LUT-FF pairs:    80  out of   3628     2%  
+   Number of unique control sets:        19
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------------+------------------------+-------+
+state[3]_state[3]_AND_771_o(state_state[3]_state[3]_AND_771_o1:O)  | NONE(*)(death)         | 1     |
+state[3]_up_Mux_2018_o(Mmux_state[3]_up_Mux_2018_o11:O)            | NONE(*)(num2_2)        | 8     |
+state[3]_num2[3]_MUX_1847_o(state_state[3]_num2[3]_MUX_1847_o5:O)  | NONE(*)(lab<2>_3)      | 4     |
+state[3]_num2[3]_MUX_2627_o(state_state[3]_num2[3]_MUX_2627_o5:O)  | NONE(*)(lab<3>_3)      | 4     |
+state[3]_num2[3]_MUX_3407_o(state_state[3]_num2[3]_MUX_3407_o5:O)  | NONE(*)(lab<4>_3)      | 4     |
+state[3]_num2[3]_MUX_4187_o(state_state[3]_num2[3]_MUX_4187_o5:O)  | NONE(*)(lab<5>_3)      | 4     |
+state[3]_num2[3]_MUX_4967_o(state_state[3]_num2[3]_MUX_4967_o5:O)  | NONE(*)(lab<6>_3)      | 4     |
+state[3]_num2[3]_MUX_5747_o(state_state[3]_num2[3]_MUX_5747_o5:O)  | NONE(*)(lab<7>_3)      | 4     |
+state[3]_num2[3]_MUX_6527_o(state_state[3]_num2[3]_MUX_6527_o5:O)  | NONE(*)(lab<8>_3)      | 4     |
+state[3]_num2[3]_MUX_7307_o(state_state[3]_num2[3]_MUX_7307_o5:O)  | NONE(*)(lab<9>_3)      | 4     |
+state[3]_num2[3]_MUX_8087_o(state_state[3]_num2[3]_MUX_8087_o5:O)  | NONE(*)(lab<10>_3)     | 4     |
+state[3]_num2[3]_MUX_8867_o(state_state[3]_num2[3]_MUX_8867_o5:O)  | NONE(*)(lab<11>_3)     | 4     |
+state[3]_num2[3]_MUX_9647_o(state_state[3]_num2[3]_MUX_9647_o5:O)  | NONE(*)(lab<12>_3)     | 4     |
+state[3]_num2[3]_MUX_10427_o(state_state[3]_num2[3]_MUX_10427_o7:O)| NONE(*)(lab<13>_3)     | 4     |
+state[3]_num2[3]_MUX_11207_o(state_state[3]_num2[3]_MUX_11207_o5:O)| NONE(*)(lab<14>_3)     | 4     |
+state[3]_num2[3]_MUX_11987_o(state_state[3]_num2[3]_MUX_11987_o5:O)| NONE(*)(lab<15>_3)     | 4     |
+state[3]_num2[3]_MUX_1067_o(state_state[3]_num2[3]_MUX_1067_o5:O)  | NONE(*)(lab<1>_3)      | 4     |
+state[3]_num2[3]_MUX_287_o(state_state[3]_num2[3]_MUX_287_o5:O)    | NONE(*)(lab<0>_2)      | 4     |
+clk                                                                | BUFGP                  | 10    |
+-------------------------------------------------------------------+------------------------+-------+
+(*) These 18 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.500ns (Maximum Frequency: 48.782MHz)
+   Minimum input arrival time before clock: 3.399ns
+   Maximum output required time after clock: 5.714ns
+   Maximum combinational path delay: 6.563ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_1847_o'
+  Clock period: 20.480ns (frequency: 48.829MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.480ns (Levels of Logic = 21)
+  Source:            lab<2>_3 (LATCH)
+  Destination:       lab<2>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_1847_o falling
+  Destination Clock: state[3]_num2[3]_MUX_1847_o falling
+
+  Data Path: lab<2>_3 to lab<2>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<2>_3 (lab<2>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_n6634_63 (Mmux_n6634_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_2406_o1110 (lab[0][3]_lab[0][3]_MUX_2406_o)
+     LDP:D                     0.036          lab<2>_0
+    ----------------------------------------
+    Total                     20.480ns (5.262ns logic, 15.218ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_2627_o'
+  Clock period: 20.420ns (frequency: 48.970MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.420ns (Levels of Logic = 21)
+  Source:            lab<3>_3 (LATCH)
+  Destination:       lab<3>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_2627_o falling
+  Destination Clock: state[3]_num2[3]_MUX_2627_o falling
+
+  Data Path: lab<3>_3 to lab<3>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<3>_3 (lab<3>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_n6634_63 (Mmux_n6634_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           12   0.254   0.909  num3[3]_GND_1_o_not_equal_555_o1_3 (num3[3]_GND_1_o_not_equal_555_o12)
+     LUT6:I5->O            1   0.254   0.688  Mmux_lab[0][3]_lab[0][3]_MUX_3186_o119 (Mmux_lab[0][3]_lab[0][3]_MUX_3186_o117)
+     LUT6:I4->O            1   0.250   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_3186_o1110 (lab[0][3]_lab[0][3]_MUX_3186_o)
+     LDP:D                     0.036          lab<3>_0
+    ----------------------------------------
+    Total                     20.420ns (5.239ns logic, 15.181ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_3407_o'
+  Clock period: 20.469ns (frequency: 48.854MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.469ns (Levels of Logic = 21)
+  Source:            lab<4>_3 (LATCH)
+  Destination:       lab<4>_2 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_3407_o falling
+  Destination Clock: state[3]_num2[3]_MUX_3407_o falling
+
+  Data Path: lab<4>_3 to lab<4>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<4>_3 (lab<4>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_n6634_57 (Mmux_n6634_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.688  Mmux_lab[0][3]_lab[0][3]_MUX_3771_o1110 (Mmux_lab[0][3]_lab[0][3]_MUX_3771_o119)
+     LUT6:I4->O            1   0.250   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_3771_o1112 (lab[0][3]_lab[0][3]_MUX_3771_o)
+     LDC:D                     0.036          lab<4>_1
+    ----------------------------------------
+    Total                     20.469ns (5.270ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_4187_o'
+  Clock period: 20.469ns (frequency: 48.854MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.469ns (Levels of Logic = 21)
+  Source:            lab<5>_3 (LATCH)
+  Destination:       lab<5>_3 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_4187_o falling
+  Destination Clock: state[3]_num2[3]_MUX_4187_o falling
+
+  Data Path: lab<5>_3 to lab<5>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<5>_3 (lab<5>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_n6634_57 (Mmux_n6634_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.580  Mmux_lab[0][3]_lab[0][3]_MUX_4551_o1111 (Mmux_lab[0][3]_lab[0][3]_MUX_4551_o1110)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_4551_o1112 (lab[0][3]_lab[0][3]_MUX_4551_o)
+     LDC:D                     0.036          lab<5>_1
+    ----------------------------------------
+    Total                     20.469ns (5.270ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_4967_o'
+  Clock period: 20.492ns (frequency: 48.801MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.492ns (Levels of Logic = 21)
+  Source:            lab<6>_3 (LATCH)
+  Destination:       lab<6>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_4967_o falling
+  Destination Clock: state[3]_num2[3]_MUX_4967_o falling
+
+  Data Path: lab<6>_3 to lab<6>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<6>_3 (lab<6>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_n6634_57 (Mmux_n6634_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_5526_o1110 (lab[0][3]_lab[0][3]_MUX_5526_o)
+     LDP:D                     0.036          lab<6>_0
+    ----------------------------------------
+    Total                     20.492ns (5.274ns logic, 15.218ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_5747_o'
+  Clock period: 20.425ns (frequency: 48.961MHz)
+  Total number of paths / destination ports: 50017009 / 4
+-------------------------------------------------------------------------
+Delay:               20.425ns (Levels of Logic = 21)
+  Source:            lab<7>_3 (LATCH)
+  Destination:       lab<7>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_5747_o falling
+  Destination Clock: state[3]_num2[3]_MUX_5747_o falling
+
+  Data Path: lab<7>_3 to lab<7>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<7>_3 (lab<7>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_n6634_57 (Mmux_n6634_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_6306_o1110 (lab[0][3]_lab[0][3]_MUX_6306_o)
+     LDP:D                     0.036          lab<7>_0
+    ----------------------------------------
+    Total                     20.425ns (5.255ns logic, 15.170ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_6527_o'
+  Clock period: 20.465ns (frequency: 48.864MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.465ns (Levels of Logic = 21)
+  Source:            lab<8>_3 (LATCH)
+  Destination:       lab<8>_2 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_6527_o falling
+  Destination Clock: state[3]_num2[3]_MUX_6527_o falling
+
+  Data Path: lab<8>_3 to lab<8>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<8>_3 (lab<8>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_n6634_56 (Mmux_n6634_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.688  Mmux_lab[0][3]_lab[0][3]_MUX_6891_o1110 (Mmux_lab[0][3]_lab[0][3]_MUX_6891_o119)
+     LUT6:I4->O            1   0.250   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_6891_o1112 (lab[0][3]_lab[0][3]_MUX_6891_o)
+     LDC:D                     0.036          lab<8>_1
+    ----------------------------------------
+    Total                     20.465ns (5.266ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_7307_o'
+  Clock period: 20.465ns (frequency: 48.864MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.465ns (Levels of Logic = 21)
+  Source:            lab<9>_3 (LATCH)
+  Destination:       lab<9>_3 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_7307_o falling
+  Destination Clock: state[3]_num2[3]_MUX_7307_o falling
+
+  Data Path: lab<9>_3 to lab<9>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<9>_3 (lab<9>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_n6634_56 (Mmux_n6634_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.580  Mmux_lab[0][3]_lab[0][3]_MUX_7671_o1111 (Mmux_lab[0][3]_lab[0][3]_MUX_7671_o1110)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_7671_o1112 (lab[0][3]_lab[0][3]_MUX_7671_o)
+     LDC:D                     0.036          lab<9>_1
+    ----------------------------------------
+    Total                     20.465ns (5.266ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_8087_o'
+  Clock period: 20.488ns (frequency: 48.810MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.488ns (Levels of Logic = 21)
+  Source:            lab<10>_3 (LATCH)
+  Destination:       lab<10>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_8087_o falling
+  Destination Clock: state[3]_num2[3]_MUX_8087_o falling
+
+  Data Path: lab<10>_3 to lab<10>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<10>_3 (lab<10>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_n6634_56 (Mmux_n6634_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_8646_o1110 (lab[0][3]_lab[0][3]_MUX_8646_o)
+     LDP:D                     0.036          lab<10>_0
+    ----------------------------------------
+    Total                     20.488ns (5.270ns logic, 15.218ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_8867_o'
+  Clock period: 20.421ns (frequency: 48.970MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.421ns (Levels of Logic = 21)
+  Source:            lab<11>_3 (LATCH)
+  Destination:       lab<11>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_8867_o falling
+  Destination Clock: state[3]_num2[3]_MUX_8867_o falling
+
+  Data Path: lab<11>_3 to lab<11>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<11>_3 (lab<11>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_n6634_56 (Mmux_n6634_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_9426_o1110 (lab[0][3]_lab[0][3]_MUX_9426_o)
+     LDP:D                     0.036          lab<11>_0
+    ----------------------------------------
+    Total                     20.421ns (5.251ns logic, 15.170ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_9647_o'
+  Clock period: 20.373ns (frequency: 49.084MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.373ns (Levels of Logic = 21)
+  Source:            lab<12>_3 (LATCH)
+  Destination:       lab<12>_3 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_9647_o falling
+  Destination Clock: state[3]_num2[3]_MUX_9647_o falling
+
+  Data Path: lab<12>_3 to lab<12>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<12>_3 (lab<12>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_n6634_43 (Mmux_n6634_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.580  Mmux_lab[0][3]_lab[0][3]_MUX_10011_o1112 (Mmux_lab[0][3]_lab[0][3]_MUX_10011_o1110)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_10011_o1113 (lab[0][3]_lab[0][3]_MUX_10011_o)
+     LDC:D                     0.036          lab<12>_1
+    ----------------------------------------
+    Total                     20.373ns (5.282ns logic, 15.091ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_10427_o'
+  Clock period: 20.335ns (frequency: 49.175MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.335ns (Levels of Logic = 21)
+  Source:            lab<13>_3 (LATCH)
+  Destination:       lab<13>_2 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_10427_o falling
+  Destination Clock: state[3]_num2[3]_MUX_10427_o falling
+
+  Data Path: lab<13>_3 to lab<13>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<13>_3 (lab<13>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_n6634_43 (Mmux_n6634_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           12   0.254   0.909  num3[3]_GND_1_o_not_equal_555_o1_3 (num3[3]_GND_1_o_not_equal_555_o12)
+     LUT5:I4->O            1   0.254   0.688  Mmux_lab[0][3]_lab[0][3]_MUX_10791_o1110 (Mmux_lab[0][3]_lab[0][3]_MUX_10791_o119)
+     LUT6:I4->O            1   0.250   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_10791_o1112 (lab[0][3]_lab[0][3]_MUX_10791_o)
+     LDC:D                     0.036          lab<13>_1
+    ----------------------------------------
+    Total                     20.335ns (5.274ns logic, 15.061ns route)
+                                       (25.9% logic, 74.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_11207_o'
+  Clock period: 20.500ns (frequency: 48.782MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.500ns (Levels of Logic = 21)
+  Source:            lab<14>_3 (LATCH)
+  Destination:       lab<14>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_11207_o falling
+  Destination Clock: state[3]_num2[3]_MUX_11207_o falling
+
+  Data Path: lab<14>_3 to lab<14>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<14>_3 (lab<14>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_n6634_43 (Mmux_n6634_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o1110 (lab[0][3]_lab[0][3]_MUX_11766_o)
+     LDP:D                     0.036          lab<14>_0
+    ----------------------------------------
+    Total                     20.500ns (5.282ns logic, 15.218ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_11987_o'
+  Clock period: 20.433ns (frequency: 48.942MHz)
+  Total number of paths / destination ports: 50017009 / 4
+-------------------------------------------------------------------------
+Delay:               20.433ns (Levels of Logic = 21)
+  Source:            lab<15>_3 (LATCH)
+  Destination:       lab<15>_0 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_11987_o falling
+  Destination Clock: state[3]_num2[3]_MUX_11987_o falling
+
+  Data Path: lab<15>_3 to lab<15>_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<15>_3 (lab<15>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_n6634_43 (Mmux_n6634_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_n6634_3_f7_2 (Mmux_n6634_3_f73)
+     MUXF8:I1->O         130   0.152   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O            1   0.254   0.580  num3[3]_GND_1_o_not_equal_555_o1_5 (num3[3]_GND_1_o_not_equal_555_o1_4)
+     LUT5:I4->O           16   0.254   1.005  Mmux_lab[0][3]_lab[0][3]_MUX_10206_o1123 (N2408)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_12546_o1110 (lab[0][3]_lab[0][3]_MUX_12546_o)
+     LDP:D                     0.036          lab<15>_0
+    ----------------------------------------
+    Total                     20.433ns (5.263ns logic, 15.170ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_1067_o'
+  Clock period: 20.457ns (frequency: 48.883MHz)
+  Total number of paths / destination ports: 50083183 / 4
+-------------------------------------------------------------------------
+Delay:               20.457ns (Levels of Logic = 21)
+  Source:            lab<1>_3 (LATCH)
+  Destination:       lab<1>_3 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_1067_o falling
+  Destination Clock: state[3]_num2[3]_MUX_1067_o falling
+
+  Data Path: lab<1>_3 to lab<1>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<1>_3 (lab<1>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_n6634_63 (Mmux_n6634_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.580  Mmux_lab[0][3]_lab[0][3]_MUX_1431_o1111 (Mmux_lab[0][3]_lab[0][3]_MUX_1431_o1110)
+     LUT6:I5->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_1431_o1112 (lab[0][3]_lab[0][3]_MUX_1431_o)
+     LDC:D                     0.036          lab<1>_1
+    ----------------------------------------
+    Total                     20.457ns (5.258ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'state[3]_num2[3]_MUX_287_o'
+  Clock period: 20.457ns (frequency: 48.883MHz)
+  Total number of paths / destination ports: 51597954 / 4
+-------------------------------------------------------------------------
+Delay:               20.457ns (Levels of Logic = 21)
+  Source:            lab<0>_3 (LATCH)
+  Destination:       lab<0>_2 (LATCH)
+  Source Clock:      state[3]_num2[3]_MUX_287_o falling
+  Destination Clock: state[3]_num2[3]_MUX_287_o falling
+
+  Data Path: lab<0>_3 to lab<0>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<0>_3 (lab<0>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_n6634_63 (Mmux_n6634_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_n6634_4_f7_2 (Mmux_n6634_4_f73)
+     MUXF8:I0->O         130   0.144   2.232  Mmux_n6634_2_f8_2 (Madd_num1[3]_GND_1_o_add_627_OUT_lut<3>)
+     LUT4:I0->O           10   0.254   0.857  _n8813<3>1_4 (_n8813<3>13)
+     LUT6:I5->O            6   0.254   0.853  num1[3]_GND_1_o_not_equal_329_o1511 (num1[3]_GND_1_o_not_equal_329_o_mmx_out234)
+     LUT5:I3->O            2   0.250   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT603 (Mmux_lab[0][3]_lab[0][3]_mux_459_OUT602)
+     LUT5:I1->O            1   0.254   0.000  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605_F (N4451)
+     MUXF7:I0->O           3   0.163   0.927  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT605 (lab[0][3]_lab[0][3]_mux_459_OUT<27>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f7_2 (Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_3_f73)
+     MUXF8:I1->O         201   0.152   2.282  Mmux_num2[3]_lab[0][3]_wide_mux_462_OUT_2_f8_2 (num2[3]_lab[0][3]_wide_mux_462_OUT<3>)
+     LUT4:I1->O           14   0.235   0.958  num2[3]_GND_1_o_not_equal_461_o1_4 (num2[3]_GND_1_o_not_equal_461_o13)
+     LUT5:I4->O           16   0.254   1.005  num2[3]_GND_1_o_not_equal_461_o1281 (N24)
+     LUT6:I5->O            2   0.254   0.617  Mmux_lab[0][3]_lab[0][3]_MUX_11766_o111 (N2879)
+     LUT6:I5->O            2   0.254   0.893  Mmux_lab[0][3]_lab[0][3]_mux_459_OUT1352 (lab[0][3]_lab[0][3]_mux_553_OUT<4>)
+     LUT6:I2->O            1   0.254   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7 (Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_3_f7)
+     MUXF8:I1->O          10   0.152   0.857  Mmux_num3[3]_lab[0][3]_wide_mux_556_OUT_2_f8 (num3[3]_lab[0][3]_wide_mux_556_OUT<0>)
+     LUT4:I3->O           23   0.254   1.154  num3[3]_GND_1_o_not_equal_555_o1_1 (num3[3]_GND_1_o_not_equal_555_o1)
+     LUT5:I4->O            1   0.254   0.688  Mmux_lab[0][3]_lab[0][3]_MUX_651_o1110 (Mmux_lab[0][3]_lab[0][3]_MUX_651_o119)
+     LUT6:I4->O            1   0.250   0.000  Mmux_lab[0][3]_lab[0][3]_MUX_651_o1112 (lab[0][3]_lab[0][3]_MUX_651_o)
+     LDC:D                     0.036          lab<0>_1
+    ----------------------------------------
+    Total                     20.457ns (5.258ns logic, 15.199ns route)
+                                       (25.7% logic, 74.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.023ns (frequency: 494.315MHz)
+  Total number of paths / destination ports: 11 / 10
+-------------------------------------------------------------------------
+Delay:               2.023ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd10 (FF)
+  Destination:       state_FSM_FFd10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: state_FSM_FFd10 to state_FSM_FFd10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP:C->Q              5   0.525   1.170  state_FSM_FFd10 (state_FSM_FFd10)
+     LUT6:I0->O            1   0.254   0.000  state_FSM_FFd10-In1 (state_FSM_FFd10-In)
+     FDP:D                     0.074          state_FSM_FFd10
+    ----------------------------------------
+    Total                      2.023ns (0.853ns logic, 1.170ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_state[3]_AND_771_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       death (LATCH)
+  Destination Clock: state[3]_state[3]_AND_771_o falling
+
+  Data Path: clr to death
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          death
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_up_Mux_2018_o'
+  Total number of paths / destination ports: 20 / 8
+-------------------------------------------------------------------------
+Offset:              2.610ns (Levels of Logic = 2)
+  Source:            up (PAD)
+  Destination:       num2_2 (LATCH)
+  Destination Clock: state[3]_up_Mux_2018_o falling
+
+  Data Path: up to num2_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.228   1.111  up_IBUF (up_IBUF)
+     LUT3:I0->O            1   0.235   0.000  Mmux_state[3]_num3[3]_Mux_2033_o11 (state[3]_num3[3]_Mux_2033_o)
+     LD:D                      0.036          num3_3
+    ----------------------------------------
+    Total                      2.610ns (1.499ns logic, 1.111ns route)
+                                       (57.4% logic, 42.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_1847_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<2>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_1847_o falling
+
+  Data Path: clr to lab<2>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<2>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_2627_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<3>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_2627_o falling
+
+  Data Path: clr to lab<3>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<3>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_3407_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<4>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_3407_o falling
+
+  Data Path: clr to lab<4>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<4>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_4187_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<5>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_4187_o falling
+
+  Data Path: clr to lab<5>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<5>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_4967_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<6>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_4967_o falling
+
+  Data Path: clr to lab<6>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<6>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_5747_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<7>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_5747_o falling
+
+  Data Path: clr to lab<7>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<7>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_6527_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<8>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_6527_o falling
+
+  Data Path: clr to lab<8>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<8>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_7307_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<9>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_7307_o falling
+
+  Data Path: clr to lab<9>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<9>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_8087_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<10>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_8087_o falling
+
+  Data Path: clr to lab<10>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<10>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_8867_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<11>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_8867_o falling
+
+  Data Path: clr to lab<11>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<11>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_9647_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<12>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_9647_o falling
+
+  Data Path: clr to lab<12>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<12>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_10427_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<13>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_10427_o falling
+
+  Data Path: clr to lab<13>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<13>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_11207_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<14>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_11207_o falling
+
+  Data Path: clr to lab<14>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<14>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_11987_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<15>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_11987_o falling
+
+  Data Path: clr to lab<15>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<15>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_1067_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<1>_3 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_1067_o falling
+
+  Data Path: clr to lab<1>_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<1>_3
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'state[3]_num2[3]_MUX_287_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       lab<0>_2 (LATCH)
+  Destination Clock: state[3]_num2[3]_MUX_287_o falling
+
+  Data Path: clr to lab<0>_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     LDC:CLR                   0.459          lab<0>_2
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 18 / 12
+-------------------------------------------------------------------------
+Offset:              3.399ns (Levels of Logic = 1)
+  Source:            clr (PAD)
+  Destination:       state_FSM_FFd10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: clr to state_FSM_FFd10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            75   1.228   1.712  clr_IBUF (clr_IBUF)
+     FDP:PRE                   0.459          state_FSM_FFd10
+    ----------------------------------------
+    Total                      3.399ns (1.687ns logic, 1.712ns route)
+                                       (49.6% logic, 50.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_state[3]_AND_771_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.875ns (Levels of Logic = 1)
+  Source:            death (LATCH)
+  Destination:       death<0> (PAD)
+  Source Clock:      state[3]_state[3]_AND_771_o falling
+
+  Data Path: death to death<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q              1   0.581   0.579  death (death)
+     OBUF:I->O                 2.715          death_0_OBUF (death<0>)
+    ----------------------------------------
+    Total                      3.875ns (3.296ns logic, 0.579ns route)
+                                       (85.1% logic, 14.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_1847_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.694ns (Levels of Logic = 4)
+  Source:            lab<2>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_1847_o falling
+
+  Data Path: lab<2>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<2>_3 (lab<2>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_out_data_63 (Mmux_out_data_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.694ns (3.857ns logic, 1.837ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_2627_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.627ns (Levels of Logic = 4)
+  Source:            lab<3>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_2627_o falling
+
+  Data Path: lab<3>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<3>_3 (lab<3>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_out_data_63 (Mmux_out_data_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.627ns (3.838ns logic, 1.789ns route)
+                                       (68.2% logic, 31.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_1067_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.522ns (Levels of Logic = 4)
+  Source:            lab<1>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_1067_o falling
+
+  Data Path: lab<1>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<1>_3 (lab<1>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_out_data_63 (Mmux_out_data_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.522ns (3.853ns logic, 1.669ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_287_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.418ns (Levels of Logic = 4)
+  Source:            lab<0>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_287_o falling
+
+  Data Path: lab<0>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<0>_3 (lab<0>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_out_data_63 (Mmux_out_data_63)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.418ns (3.857ns logic, 1.561ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_4967_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.706ns (Levels of Logic = 4)
+  Source:            lab<6>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_4967_o falling
+
+  Data Path: lab<6>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<6>_3 (lab<6>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_out_data_57 (Mmux_out_data_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.706ns (3.869ns logic, 1.837ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_5747_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.639ns (Levels of Logic = 4)
+  Source:            lab<7>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_5747_o falling
+
+  Data Path: lab<7>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<7>_3 (lab<7>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_out_data_57 (Mmux_out_data_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.639ns (3.850ns logic, 1.789ns route)
+                                       (68.3% logic, 31.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_4187_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.534ns (Levels of Logic = 4)
+  Source:            lab<5>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_4187_o falling
+
+  Data Path: lab<5>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<5>_3 (lab<5>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_out_data_57 (Mmux_out_data_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.534ns (3.865ns logic, 1.669ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_3407_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.430ns (Levels of Logic = 4)
+  Source:            lab<4>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_3407_o falling
+
+  Data Path: lab<4>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<4>_3 (lab<4>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_out_data_57 (Mmux_out_data_57)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_4_f7_2 (Mmux_out_data_4_f73)
+     MUXF8:I0->O           1   0.144   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.430ns (3.869ns logic, 1.561ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_8087_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.702ns (Levels of Logic = 4)
+  Source:            lab<10>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_8087_o falling
+
+  Data Path: lab<10>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<10>_3 (lab<10>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_out_data_56 (Mmux_out_data_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.702ns (3.865ns logic, 1.837ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_8867_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.635ns (Levels of Logic = 4)
+  Source:            lab<11>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_8867_o falling
+
+  Data Path: lab<11>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<11>_3 (lab<11>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_out_data_56 (Mmux_out_data_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.635ns (3.846ns logic, 1.789ns route)
+                                       (68.3% logic, 31.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_7307_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.530ns (Levels of Logic = 4)
+  Source:            lab<9>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_7307_o falling
+
+  Data Path: lab<9>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<9>_3 (lab<9>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_out_data_56 (Mmux_out_data_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.530ns (3.861ns logic, 1.669ns route)
+                                       (69.8% logic, 30.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_6527_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.426ns (Levels of Logic = 4)
+  Source:            lab<8>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_6527_o falling
+
+  Data Path: lab<8>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<8>_3 (lab<8>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_out_data_56 (Mmux_out_data_56)
+     MUXF7:I0->O           1   0.163   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.426ns (3.865ns logic, 1.561ns route)
+                                       (71.2% logic, 28.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_11207_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.714ns (Levels of Logic = 4)
+  Source:            lab<14>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_11207_o falling
+
+  Data Path: lab<14>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.258  lab<14>_3 (lab<14>_3)
+     LUT6:I2->O            1   0.254   0.000  Mmux_out_data_43 (Mmux_out_data_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.714ns (3.877ns logic, 1.837ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_11987_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.647ns (Levels of Logic = 4)
+  Source:            lab<15>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_11987_o falling
+
+  Data Path: lab<15>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.210  lab<15>_3 (lab<15>_3)
+     LUT6:I3->O            1   0.235   0.000  Mmux_out_data_43 (Mmux_out_data_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.647ns (3.858ns logic, 1.789ns route)
+                                       (68.3% logic, 31.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_10427_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.542ns (Levels of Logic = 4)
+  Source:            lab<13>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_10427_o falling
+
+  Data Path: lab<13>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   1.090  lab<13>_3 (lab<13>_3)
+     LUT6:I4->O            1   0.250   0.000  Mmux_out_data_43 (Mmux_out_data_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.542ns (3.873ns logic, 1.669ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'state[3]_num2[3]_MUX_9647_o'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.438ns (Levels of Logic = 4)
+  Source:            lab<12>_3 (LATCH)
+  Destination:       out_data<3> (PAD)
+  Source Clock:      state[3]_num2[3]_MUX_9647_o falling
+
+  Data Path: lab<12>_3 to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDC:G->Q             15   0.581   0.982  lab<12>_3 (lab<12>_3)
+     LUT6:I5->O            1   0.254   0.000  Mmux_out_data_43 (Mmux_out_data_43)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_3_f7_2 (Mmux_out_data_3_f73)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8_2 (out_data_3_OBUF)
+     OBUF:I->O                 2.715          out_data_3_OBUF (out_data<3>)
+    ----------------------------------------
+    Total                      5.438ns (3.877ns logic, 1.561ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 44 / 4
+-------------------------------------------------------------------------
+Delay:               6.563ns (Levels of Logic = 5)
+  Source:            in_data<1> (PAD)
+  Destination:       out_data<3> (PAD)
+
+  Data Path: in_data<1> to out_data<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.228   1.460  in_data_1_IBUF (in_data_1_IBUF)
+     LUT6:I0->O            1   0.254   0.000  Mmux_out_data_4 (Mmux_out_data_4)
+     MUXF7:I1->O           1   0.175   0.000  Mmux_out_data_3_f7 (Mmux_out_data_3_f7)
+     MUXF8:I1->O           1   0.152   0.579  Mmux_out_data_2_f8 (out_data_0_OBUF)
+     OBUF:I->O                 2.715          out_data_0_OBUF (out_data<0>)
+    ----------------------------------------
+    Total                      6.563ns (4.524ns logic, 2.039ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.023|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_10427_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.335|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.315|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.507|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.440|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.487|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.420|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.211|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.223|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.327|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.499|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.432|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.219|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.323|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.495|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.428|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.231|         |
+state[3]_up_Mux_2018_o      |         |         |   21.790|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_1067_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.477|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.457|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.649|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.582|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.629|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.562|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.353|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.365|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.641|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.574|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.361|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.637|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.570|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.373|         |
+state[3]_up_Mux_2018_o      |         |         |   21.932|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_11207_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_11987_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_1847_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_2627_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.335|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.315|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.507|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.440|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.487|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.420|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.211|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.223|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.327|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.499|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.432|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.219|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.323|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.495|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.428|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.231|         |
+state[3]_up_Mux_2018_o      |         |         |   21.790|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_287_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.581|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.561|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.753|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.686|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.733|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.666|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.457|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.573|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.745|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.678|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.569|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.741|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.674|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.477|         |
+state[3]_up_Mux_2018_o      |         |         |   22.036|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_3407_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.581|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.561|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.753|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.686|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.733|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.666|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.457|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.573|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.745|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.678|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.569|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.741|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.674|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.477|         |
+state[3]_up_Mux_2018_o      |         |         |   22.036|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_4187_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.477|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.457|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.649|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.582|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.629|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.562|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.353|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.365|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.641|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.574|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.361|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.637|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.570|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.373|         |
+state[3]_up_Mux_2018_o      |         |         |   21.932|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_4967_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_5747_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_6527_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.581|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.561|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.753|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.686|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.733|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.666|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.457|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.573|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.745|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.678|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.569|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.741|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.674|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.477|         |
+state[3]_up_Mux_2018_o      |         |         |   22.036|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_7307_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.477|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.457|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.649|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.582|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.629|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.562|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.353|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.365|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.641|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.574|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.361|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.637|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.570|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.373|         |
+state[3]_up_Mux_2018_o      |         |         |   21.932|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_8087_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_8867_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.328|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.308|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.500|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.433|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.480|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.413|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.204|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.216|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.320|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.492|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.425|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.212|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.316|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.488|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.421|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.224|         |
+state[3]_up_Mux_2018_o      |         |         |   21.782|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_num2[3]_MUX_9647_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+clk                         |         |         |   10.651|         |
+state[3]_num2[3]_MUX_10427_o|         |         |   20.477|         |
+state[3]_num2[3]_MUX_1067_o |         |         |   20.457|         |
+state[3]_num2[3]_MUX_11207_o|         |         |   20.649|         |
+state[3]_num2[3]_MUX_11987_o|         |         |   20.582|         |
+state[3]_num2[3]_MUX_1847_o |         |         |   20.629|         |
+state[3]_num2[3]_MUX_2627_o |         |         |   20.562|         |
+state[3]_num2[3]_MUX_287_o  |         |         |   20.353|         |
+state[3]_num2[3]_MUX_3407_o |         |         |   20.365|         |
+state[3]_num2[3]_MUX_4187_o |         |         |   20.469|         |
+state[3]_num2[3]_MUX_4967_o |         |         |   20.641|         |
+state[3]_num2[3]_MUX_5747_o |         |         |   20.574|         |
+state[3]_num2[3]_MUX_6527_o |         |         |   20.361|         |
+state[3]_num2[3]_MUX_7307_o |         |         |   20.465|         |
+state[3]_num2[3]_MUX_8087_o |         |         |   20.637|         |
+state[3]_num2[3]_MUX_8867_o |         |         |   20.570|         |
+state[3]_num2[3]_MUX_9647_o |         |         |   20.373|         |
+state[3]_up_Mux_2018_o      |         |         |   21.932|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock state[3]_up_Mux_2018_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    3.328|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 416.00 secs
+Total CPU time to Xst completion: 416.73 secs
+ 
+--> 
+
+Total memory usage is 214436 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   73 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

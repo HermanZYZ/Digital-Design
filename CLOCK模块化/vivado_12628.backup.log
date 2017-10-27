@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon Dec 26 22:08:50 2016
+# Process ID: 12628
+# Current directory: C:/Users/ZYZ/Desktop/CLOCK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent932 C:\Users\ZYZ\Desktop\CLOCK\CLOCK.xpr
+# Log file: C:/Users/ZYZ/Desktop/CLOCK/vivado.log
+# Journal file: C:/Users/ZYZ/Desktop/CLOCK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZYZ/Desktop/CLOCK/CLOCK.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 780.582 ; gain = 120.430
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Mon Dec 26 22:13:22 2016] Launched synth_1...
+Run output will be captured here: C:/Users/ZYZ/Desktop/CLOCK/CLOCK.runs/synth_1/runme.log
+[Mon Dec 26 22:13:22 2016] Launched impl_1...
+Run output will be captured here: C:/Users/ZYZ/Desktop/CLOCK/CLOCK.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 802.316 ; gain = 11.934
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.3
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ZYZ/Desktop/CLOCK/.Xil/Vivado-12628-DESKTOP-3Q2SFCD/dcp/CLOCK.xdc]
+Finished Parsing XDC File [C:/Users/ZYZ/Desktop/CLOCK/.Xil/Vivado-12628-DESKTOP-3Q2SFCD/dcp/CLOCK.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 978.227 ; gain = 0.926
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.241 . Memory (MB): peak = 978.227 ; gain = 0.926
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1078.027 ; gain = 274.996
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property IOSTANDARD LVCMOS33 [get_ports [list alarm_LED]]
+set_property is_loc_fixed true [get_ports [list  alarm_LED]]
+place_ports alarm_LED U19
+save_constraints
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 26 22:21:12 2016...

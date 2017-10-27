@@ -1,0 +1,1277 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 3944
+
+Current time: 	12/23/16 5:18:54 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	E:/Windows_Application/Vivado/Vivado/2015.2/tps/win64/jre
+
+User name: 	Abner
+User directory: G:/Project_VGA_Game
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/Abner/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/Abner/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	212 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 524 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: G:\Project_VGA_Game\project_2.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project G:/Project_VGA_Game/project_2.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 42 MB (+42000kb) [00:00:04]
+// [Engine Memory]: 427 MB (+295827kb) [00:00:04]
+// Tcl Message: open_project G:/Project_VGA_Game/project_2.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/project_1/project_2' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+10792kb) [00:00:05]
+// [GUI Memory]: 58 MB (+105kb) [00:00:05]
+// [Engine Memory]: 508 MB (+63325kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Windows_Application/Vivado/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 532 MB. GUI used memory: 40 MB. Current time: 12/23/16 5:18:54 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: G:/Project_VGA_Game; part: xc7a35ticpg236-1L
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 540 MB (+6094kb) [00:00:08]
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 130, 450); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 62 MB (+1009kb) [00:01:47]
+// Elapsed time: 75 seconds
+selectCodeEditor("vga_controller.v", 258, 470); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("vga_controller.v", 250, 458); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 558 MB. GUI used memory: 43 MB. Current time: 12/23/16 5:21:45 PM CST
+// Elapsed time: 35 seconds
+selectCodeEditor("vga_controller.v", 26, 162); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 66 MB (+1142kb) [00:03:07]
+// Elapsed time: 202 seconds
+selectCodeEditor("vga_controller.v", 168, 196); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 162, 214); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 75 MB (+6250kb) [00:06:56]
+// [GUI Memory]: 81 MB (+2072kb) [00:07:24]
+// [Engine Memory]: 568 MB (+1904kb) [00:07:24]
+// Elapsed time: 84 seconds
+selectCodeEditor("vga_controller.v", 204, 562); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 197, 572); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 163, 589); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 165, 580); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("vga_controller.v", 183, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 230, 644); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 187, 666); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 213, 640); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 217, 655); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 42 seconds
+selectCodeEditor("vga_controller.v", 147, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 87 MB (+1723kb) [00:11:09]
+// Elapsed time: 117 seconds
+selectCodeEditor("vga_controller.v", 190, 404); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 116, 398); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 105, 410); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 106, 406); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 110, 400); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 394); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("vga_controller.v", 7, 412); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 95 MB (+4032kb) [00:11:55]
+// [GUI Memory]: 127 MB (+29139kb) [00:11:57]
+// HMemoryUtils.trashcanNow. Engine heap size: 593 MB. GUI used memory: 45 MB. Current time: 12/23/16 5:30:44 PM CST
+// Elapsed time: 32 seconds
+selectCodeEditor("vga_controller.v", 186, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 76 seconds
+selectCodeEditor("vga_controller.v", 323, 456); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 193, 544); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("vga_controller.v", 52, 644); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 41, 653); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 8, 654); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 3, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 2, 315); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 35, 316); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 26, 328); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 224, 353); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 75, 315); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 4, 752); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 22, 733); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 25, 352); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 157, 342); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 188, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 224, 337); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 163, 338); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 99, 354); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 69 seconds
+selectCodeEditor("vga_controller.v", 160, 411); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 389, 391); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 287, 339); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 294, 320); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 193, 484); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 229, 507); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 143, 139); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 202 seconds
+selectCodeEditor("vga_controller.v", 145, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 159, 636); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 182, 583); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 247, 510); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 56, 346); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 163, 505); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 181, 507); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 96, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 204, 627); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 195, 763); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 75, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 163, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 120, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_controller.v", 125, 486); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 128, 735); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 145, 734); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 151, 735); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 69, 774); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 75, 774); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 73, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 79, 810); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 226, 827); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 132, 863); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 161, 904); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 903); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 149, 905); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 865); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 134 MB (+587kb) [00:20:54]
+selectCodeEditor("vga_controller.v", 119, 864); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 133, 941); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 152, 920); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 223, 925); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 176, 925); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 74, 907); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 77, 921); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 201, 918); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 71, 808); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 95, 791); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 107, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 48, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 49, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 72, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 164, 736); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 190, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 149, 830); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 305, 815); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 237, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 175, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 127, 714); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 189, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 62, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 201, 794); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 192, 807); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 154, 821); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 123, 694); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 498); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 296, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 182, 498); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 50, 503); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 83, 257); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 83, 257, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 91, 256); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 256); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 89, 523); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 89, 523, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 102, 525); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 525, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 91, 525); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 85, 525); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 86, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 161, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 218, 560); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 333, 609); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 88, 616); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 88, 616, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 103, 619); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 100, 619, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 93, 619); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 105, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 144, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 86, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 95, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 145, 496); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 169, 597); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 169, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 635); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 635, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 120, 636); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 125, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 127, 637, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 120, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 125, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 190, 656); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 65, 667); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 69, 659); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 68, 655); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 75, 659); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 178, 657); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 179, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 184, 503); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 177, 694); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 71, 640); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 79, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 43, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 49, 579); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 67, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 78, 564); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 74, 597); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 224, 589); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 241, 530); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 263, 765); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 171, 712); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 190, 719); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 190, 715); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 187, 715, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 189, 714); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 183, 739); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 142 MB (+626kb) [00:24:30]
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_controller.v", 58, 483); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 161, 497); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 165, 491); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 260, 715); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 199, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 247, 543); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 149, 542); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 121, 515); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 97, 507); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 283, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 37 seconds
+selectCodeEditor("vga_controller.v", 361, 151); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 85 seconds
+selectCodeEditor("vga_controller.v", 478, 822); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectCodeEditor("vga_controller.v", 1611, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 452, 830); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 438, 827); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 429, 495); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 103, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 179, 399); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 183, 391); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 103, 521); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 143, 550); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 260, 416); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 239); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 239, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 152, 245); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 189, 242); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 111, 322); // bj:J (JPanel:JComponent, cl:JFrame)
+// [Engine Memory]: 597 MB (+221kb) [00:28:32]
+// Elapsed time: 28 seconds
+selectCodeEditor("vga_controller.v", 677, 113); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 139, 411); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 47 seconds
+selectCodeEditor("vga_controller.v", 139, 367); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 139, 367, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 141, 354); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 141, 354, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 139, 369); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 139, 369, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 317, 339); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 315, 379); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 324, 388); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 601, 338); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 504, 376); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectCodeEditor("vga_controller.v", 377, 419); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 367, 454); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("vga_controller.v", 367, 451); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 462); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 289, 467); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 317, 467); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 141, 465); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("vga_controller.v", 415, 416); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 387, 444); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_controller.v", 422, 456); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 422, 451); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 460, 435); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("vga_controller.v", 355, 523); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 167, 554); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 185, 546); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 103, 535); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 287, 545); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 287, 545, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 391, 505); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 35 seconds
+selectCodeEditor("vga_controller.v", 695, 613); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 474, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 475, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 478, 525); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 644, 452); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 417, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 408, 519); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 371, 542); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 357, 543); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 391, 545); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 133, 521); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 127, 523); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("vga_controller.v", 308, 513); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 523, 521); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 445, 529); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 306, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 63, 400); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 120, 527); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 72, 524); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 105, 517); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 105, 517, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 157, 531); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 85, 400); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 81, 486); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 214, 365); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 127, 373); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 95, 519); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 167, 809); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 61 seconds
+selectCodeEditor("vga_controller.v", 383, 411); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 477, 409); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 483, 403); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 27 seconds
+selectCodeEditor("vga_controller.v", 77, 258); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 71, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 117, 347); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 123, 349); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("vga_controller.v", 179, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 344, 654); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 210, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 103, 723); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 112, 706); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 46 seconds
+selectCodeEditor("vga_controller.v", 203, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 345, 714); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_controller.v", 218, 715); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 211, 717); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 208, 716, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 367, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 335, 708); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 169, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 129, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 47, 534); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 25 seconds
+selectCodeEditor("vga_controller.v", 139, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 139, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 129, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 101, 596); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 613 MB. GUI used memory: 48 MB. Current time: 12/23/16 5:58:00 PM CST
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 139, 234); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 154, 208); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 153, 221); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 126, 198); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 122, 175); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 187, 467); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("vga_controller.v", 126, 605); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 129, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 129, 600, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 281, 605); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 229, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("vga_controller.v", 139, 542); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 268, 589); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 234, 595); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("vga_controller.v", 180, 641); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 180, 641, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 89, 470); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 96, 583); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 150, 544); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 48, 469); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 139, 472); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 102, 466); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 562); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 141, 502); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 123, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 125, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 206, 522); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 217, 523); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 204, 524); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 188, 502); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 183, 475); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 167, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 113, 569); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 81, 559); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 174, 560); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 240, 727); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 245, 757); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 243, 769); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("vga_controller.v", 305, 591); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 122, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 155, 773); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 113, 792); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 237, 744); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 240, 728); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 238, 729); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 221, 706); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 275, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 96 seconds
+selectCodeEditor("vga_controller.v", 213, 635); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 273, 643); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 30 seconds
+selectCodeEditor("vga_controller.v", 153, 677); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 119, 677); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_controller.v", 88, 601); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 158, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 164, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 254, 683); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 225, 671); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 326, 665); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 318, 678); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_controller.v", 380, 699); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 372, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 368, 722); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 97, 713); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 297, 681); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 346, 674); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("vga_controller.v", 343, 645); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 340, 649); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 225, 669); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 150, 651); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 182, 691); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 190, 699); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 188, 697); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 98, 733); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 126, 661); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 39 seconds
+selectCodeEditor("vga_controller.v", 195, 559); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 220, 167); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 204, 185); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 207, 213); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 235, 221); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 264, 161); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 173, 218); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 332, 223); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 242, 474); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("vga_controller.v", 84, 653); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_controller.v", 87, 678); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 94, 673); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 73, 176); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 374, 190); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 375, 190); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey(null, null, 'z');
+// Elapsed time: 15 seconds
+selectCodeEditor("vga_controller.v", 80, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 80, 541, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 95, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 159, 559); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 244, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 100, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 96, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 112, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 78, 535); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 78, 535, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 109, 541); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 94, 580); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 125, 577); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 186, 593); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 192, 573); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 177, 563); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 244, 567); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 232, 539); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 235, 532); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 169, 602); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 169, 602, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("vga_controller.v", 116, 809); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 203, 807); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 82, 783); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 70 seconds
+selectCodeEditor("vga_controller.v", 66, 365); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 404, 374); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("vga_controller.v", 143, 631); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 152, 638); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 152, 638, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 203, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 203, 639, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 121, 731); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 88, 744); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 529, 461); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 264, 683); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 245, 699); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 222, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 212, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 210, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 282, 690); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 287, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 362, 600); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 284, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 366, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 608, 667); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("vga_controller.v", 266, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 270, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 507, 349); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 215, 350); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 198, 355); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 186, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("vga_controller.v", 338, 294); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 352, 274); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 34 seconds
+selectCodeEditor("vga_controller.v", 297, 578); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 112, 612); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 146, 427); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("vga_controller.v", 236, 454); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 337, 443); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 192, 591); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 172, 680); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 167, 703); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 150, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 234, 206); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 252, 241); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 318, 758); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 254, 753); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 318, 743); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 4, 787); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 4, 787, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 4, 787); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 0, 155); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 230, 267); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 218, 251); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 8, 295); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 5, 719); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 161, 299); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 198, 735); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 38, 735); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 28, 746); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 10, 751); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 8, 751); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 15, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 12, 788); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 364, 643); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 321, 679); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("vga_controller.v", 133, 730); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 52 seconds
+selectCodeEditor("vga_controller.v", 725, 623); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("vga_controller.v", 649, 575); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("vga_controller.v", 704, 608); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 154, 732); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("vga_controller.v", 147, 235); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 760, 495); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 136, 317); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("vga_controller.v", 174, 633); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectCodeEditor("vga_controller.v", 682, 495); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 144, 237); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 232, 416); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 146, 251); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 392, 733); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 168, 641); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 80, 655); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("vga_controller.v", 190, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 178, 637); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 64, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 64, 639, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 48, 644); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 42, 640); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 152, 632); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 102, 710); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 110, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 149, 749); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 150, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 148, 788); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 138, 752); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 61, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 61, 617, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 72, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 62, 623); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 62, 621, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 133, 755); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 133, 755, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 769); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 131, 769, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 128, 783); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 128, 783, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 142, 769); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 142, 791); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 112, 629); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 86, 659); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 86, 659, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 115, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 279, 599); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 68, 619); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 42, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 197, 623); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 298, 619); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 304, 620); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 43, 618); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 104, 641); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 208, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 208, 639, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 210, 658); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 210, 658, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 328, 652); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 300, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 301, 655); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 315, 655); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 214, 671); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 214, 671, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 294, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 294, 675, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 303, 678); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 308, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 330, 674); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 42, 677); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 83, 689); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 211, 692); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 211, 692, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 295, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 298, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 305, 694); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 324, 686); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 318, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 343, 697); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "vga_controller.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 212, 712); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 212, 712, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 304, 718); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 386, 699); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 218, 695); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 216, 707); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 210, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 217, 713); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 378, 739); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 620 MB. GUI used memory: 50 MB. Current time: 12/23/16 6:28:00 PM CST
+// Elapsed time: 580 seconds
+selectCodeEditor("vga_controller.v", 288, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 126 seconds
+selectCodeEditor("vga_controller.v", 218, 641); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 666, 381); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cl:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // w:JideButton (CommandBar:DockableBar, b:g)
+// Elapsed time: 10 seconds
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ab:JMenuItem (ai:JPopupMenu, b:g)
+// I:ag (b:g): Create Source File: addNotify
+// Elapsed time: 17 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Button_"); // ao:JTextField (JPanel:JComponent, I:ag)
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Button_Scan"); // ao:JTextField (JPanel:JComponent, I:ag)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:ag)
+dismissDialog("Create Source File"); // I:ag (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'f' command handler elapsed time: 50 seconds
+dismissDialog("Add Sources"); // b:g (cl:JFrame)
+// Tcl Message: close [ open G:/Project_VGA_Game/project_2.srcs/sources_1/new/Button_Scan.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files G:/Project_VGA_Game/project_2.srcs/sources_1/new/Button_Scan.v 
+// L:ag (cl:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, L:ag)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, U:JDialog)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // L:ag (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scan (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scan (Button_Scan.v)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("Button_Scan.v", 110, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 106, 444); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Button_Scan.v", 404, 732); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 106, 422); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 53 seconds
+selectCodeEditor("Button_Scan.v", 84, 517); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 74, 563); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 105, 457); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Button_Scan.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 104, 273); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("Button_Scan.v", 312, 55); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 263, 283); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 246, 309); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 242, 311, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ab:JMenuItem (ai:JPopupMenu, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 48, 317); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 170, 315); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 154, 325); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 124, 329); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 212, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 248, 335); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 282, 330); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Button_Scan.v", 108, 335); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 108, 335, false, false, false, false, true); // bj:J (JPanel:JComponent, cl:JFrame) - Double Click
+selectCodeEditor("Button_Scan.v", 125, 334); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 83, 337); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 158, 333); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 374, 561); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 441, 757); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 100, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 96, 639); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 229, 687, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("Button_Scan.v", 450, 745); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 452, 726); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 429, 747); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 428, 749); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 96, 693, false, false, false, true, false); // bj:J (JPanel:JComponent, cl:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ab:JMenuItem (ai:JPopupMenu, Popup:JWindow)
+selectCodeEditor("Button_Scan.v", 88, 706); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 94, 692); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Button_Scan.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Button_Scan.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 144, 749); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 193, 811); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 193, 811); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Button_Scan.v", 192, 779); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("Button_Scan.v", 188, 787); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("Button_Scan.v", 267, 371); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 264, 389); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 20 seconds
+selectCodeEditor("Button_Scan.v", 376, 551); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 352, 488); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 328, 453); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 170, 623); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 174, 131); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 223, 125); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 86, 331); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 250, 598); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Button_Scan.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 277, 605); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "Button_Scan.v", 'v'); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 176, 633); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 194, 651); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 312, 634); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 259, 747); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 270, 731); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 281, 715); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 78, 711); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 219, 772); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 256, 656); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("Button_Scan.v", 52, 802); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 232, 313); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aE:ag (cl:JFrame): Create Block Design: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aE:ag)
+dismissDialog("Create Block Design"); // aE:ag (cl:JFrame)
+selectCodeEditor("Button_Scan.v", 306, 392); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 308, 371); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 132, 450); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 186, 451); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 203, 272); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 26 seconds
+selectCodeEditor("Button_Scan.v", 148, 429); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 110, 481); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 224, 521); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 278, 495); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 290, 484); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 100, 441); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 46, 422); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 109, 482); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("Button_Scan.v", 174, 273); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectCodeEditor("Button_Scan.v", 258, 291); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("Button_Scan.v", 124, 131); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("vga_controller.v", 214, 533); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 61, 455); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 33, 453); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 5, 565); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 158, 617); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 368, 619); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 28, 461); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 24, 468); // bj:J (JPanel:JComponent, cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("vga_controller.v", 26, 467); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 132, 485); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 141, 502); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 134, 480); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 130, 532); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 25, 507); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 806, 673); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 36, 443); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 28, 245); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 34, 254); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 23, 274); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 124, 272); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 198, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 199, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 202, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 105, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 118, 273); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 181, 275); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 207, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 202, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 192, 278); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 429, 390); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 123, 276); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 186, 271); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("vga_controller.v", 93, 345); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 23, 281); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 22, 277); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 194, 273); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 45, 214); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 168, 785); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 98, 771); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 774, 653); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 623, 520); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 83 seconds
+selectCodeEditor("vga_controller.v", 352, 709); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 50, 824); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 64 seconds
+selectCodeEditor("vga_controller.v", 195, 659); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 136 seconds
+selectCodeEditor("vga_controller.v", 31, 223); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 213, 237); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("vga_controller.v", 143, 671); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 23 seconds
+selectCodeEditor("vga_controller.v", 24, 673); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 129, 682); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 61, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 144, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 149, 692); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("vga_controller.v", 136, 687); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 130, 694); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 89 seconds
+selectCodeEditor("vga_controller.v", 358, 693); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("vga_controller.v", 277, 681); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 252, 659); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 251, 652); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 675); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 27, 751); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 168, 777); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 161, 791); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 22, 501); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 116, 537); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 117, 557); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("vga_controller.v", 118, 577); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 32 seconds
+selectCodeEditor("vga_controller.v", 512, 562); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("vga_controller.v", 448, 433); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 1, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 2, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("Button_Scan.v", 118, 123); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 23, 447); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 198, 455); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 28, 462); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("Button_Scan.v", 202, 479); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aE:ag (cl:JFrame): Create Block Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, aE:ag)
+dismissDialog("Create Block Design"); // aE:ag (cl:JFrame)
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: create_bd_design "design_1" 
+// Tcl Message: Wrote  : <G:/Project_VGA_Game/project_2.srcs/sources_1/bd/design_1/design_1.bd>  
+// cp:P (cl:JFrame):  Create Block Design : addNotify
+dismissDialog("Create Block Design"); // cp:P (cl:JFrame)
+// [Engine Memory]: 633 MB (+6857kb) [01:35:20]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, false); // k:JTree (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, false, false, false, false, false, true); // k:JTree (JViewport:JComponent, cl:JFrame) - Double Click
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, false); // k:JTree (JViewport:JComponent, cl:JFrame)
+selectTree(PAResourceQtoS.SystemTreeView_SYSTEM_TREE, "[design_1]", 0, false, false, false, false, false, true); // k:JTree (JViewport:JComponent, cl:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 633 MB. GUI used memory: 53 MB. Current time: 12/23/16 6:54:10 PM CST
+selectTab((HResource) null, (HResource) null, "Design", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 2, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+selectTab((HResource) null, (HResource) null, "Design", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 2, false, false, false, false, true, false); // A:k (H:JPanel, cl:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // X:JMenu (ai:JPopupMenu, cl:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Button_Scaning (Button_Scan.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// cp:P (cl:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {G:/Project_VGA_Game/project_2.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // cp:P (cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// cp:P (cl:JFrame):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {G:/Project_VGA_Game/project_2.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // cp:P (cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // A:k (H:JPanel, cl:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // A:k (H:JPanel, cl:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // A:k (H:JPanel, cl:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Create Block Design]", 6, false); // w:Y (v:H, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_NEW_DIAGRAM
+// aE:ag (cl:JFrame): Create Block Design: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, aE:ag)
+dismissDialog("Create Block Design"); // aE:ag (cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 2, false); // A:k (H:JPanel, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 639 MB. GUI used memory: 56 MB. Current time: 12/23/16 7:24:11 PM CST
+// Elapsed time: 1841 seconds
+selectButton(PAResourceCommand.PACommandNames_OPEN_SRCS, "Sources_open_src_file"); // w:JideButton (CommandBar:DockableBar, cl:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_SRCS

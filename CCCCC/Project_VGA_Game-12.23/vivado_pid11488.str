@@ -1,0 +1,89 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 11488
+
+Current time: 	12/23/16 11:08:38 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	E:/Windows_Application/Vivado/Vivado/2015.2/tps/win64/jre
+
+User name: 	Abner
+User directory: G:/Project_VGA_Game
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/Abner/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/Abner/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	202 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 507 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: G:\Project_VGA_Game\project_2.xpr. Version: Vivado v2015.2 
+// cp:P (cl:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project G:/Project_VGA_Game/project_2.xpr 
+// [GUI Memory]: 41 MB (+40374kb) [00:00:04]
+// [Engine Memory]: 428 MB (+297708kb) [00:00:04]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+12632kb) [00:00:05]
+// [Engine Memory]: 450 MB (+648kb) [00:00:05]
+// [Engine Memory]: 485 MB (+12238kb) [00:00:05]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project G:/Project_VGA_Game/project_2.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Abner/Downloads/Project_VGA_Game' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Windows_Application/Vivado/Vivado/2015.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 508 MB. GUI used memory: 41 MB. Current time: 12/23/16 11:08:39 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 509 MB (+221kb) [00:00:07]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: project_2; location: G:/Project_VGA_Game; part: xc7a35ticpg236-1L
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 60 MB (+2730kb) [00:00:12]
+// Elapsed time: 466 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 6, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 6, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (vga_controller.v)]", 6, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// [GUI Memory]: 64 MB (+225kb) [00:10:26]
+// [GUI Memory]: 67 MB (+222kb) [00:20:57]
+// [GUI Memory]: 71 MB (+223kb) [00:25:42]
+// HMemoryUtils.trashcanNow. Engine heap size: 522 MB. GUI used memory: 44 MB. Current time: 12/23/16 11:38:39 PM CST
+// [GUI Memory]: 74 MB (+279kb) [00:39:27]
+// [GUI Memory]: 79 MB (+326kb) [00:40:07]
+// [GUI Memory]: 84 MB (+1213kb) [00:52:13]
+// [GUI Memory]: 88 MB (+652kb) [00:54:56]

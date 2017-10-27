@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Jan 11 14:20:14 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "clr" LOCATE = SITE "B8" LEVEL 1;
+COMP "death" LOCATE = SITE "T11" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "left_button" LOCATE = SITE "C4" LEVEL 1;
+COMP "blu<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blu<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "grn<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "grn<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "grn<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "down_button" LOCATE = SITE "C9" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "up_button" LOCATE = SITE "A8" LEVEL 1;
+COMP "right_button" LOCATE = SITE "D9" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,8 @@
+verilog work "VGA_dis.v"
+verilog work "VGA.v"
+verilog work "divider.v"
+verilog work "dis_shake.v"
+verilog work "data.v"
+verilog work "VGA_TOP.v"
+verilog work "VGA_test.v"
+verilog work "C:/Xilinx/12.3/ISE_DS/ISE//verilog/src/glbl.v"

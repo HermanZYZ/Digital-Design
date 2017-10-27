@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu Dec 29 13:07:33 2016
+# Process ID: 2824
+# Current directory: E:/STUDY/大二上/数字设计/Clock
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5404 E:\STUDY\大二上\数字设计\Clock\Clock.xpr
+# Log file: E:/STUDY/大二上/数字设计/Clock/vivado.log
+# Journal file: E:/STUDY/大二上/数字设计/Clock\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/STUDY/大二上/数字设计/Clock/Clock.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ZYZ/Desktop/CCCCC/Clock' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'E:/STUDY/大二上/数字设计/Clock/Clock.cache/ip', nor could it be found using path 'C:/Users/ZYZ/Desktop/CCCCC/Clock/Clock.cache/ip'.
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/STUDY/大二上/数字设计/Clock/Clock.ip_user_files', nor could it be found using path 'C:/Users/ZYZ/Desktop/CCCCC/Clock/Clock.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 689.313 ; gain = 96.891

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/VGA/VGA_dis.xst" -ofn "C:/VGA/VGA_dis.syr" 

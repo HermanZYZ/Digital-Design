@@ -1,0 +1,111 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/VGA/VGA_TOP.xst" -ofn "C:/Documents and Settings/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 "VGA_TOP.ngc" VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/VGA/VGA_TOP.xst" -ofn "C:/Documents and Settings/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 "VGA_TOP.ngc" VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/VGA/VGA_TOP.xst" -ofn "C:/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "C:/1.9/VGA/VGA_TOP.xst" -ofn "C:/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.xst" -ofn "D:/Xilinx/WorkSpace/CPU/1.9/VGA/VGA_TOP.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc VGA_TOP_ucf.ucf -p xc6slx16-csg324-3 VGA_TOP.ngc VGA_TOP.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o VGA_TOP_map.ncd VGA_TOP.ngd VGA_TOP.pcf 
+par -w -intstyle ise -ol high -mt off VGA_TOP_map.ncd VGA_TOP.ncd VGA_TOP.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml VGA_TOP.twx VGA_TOP.ncd -o VGA_TOP.twr VGA_TOP.pcf -ucf VGA_TOP_ucf.ucf 
+bitgen -intstyle ise -f VGA_TOP.ut VGA_TOP.ncd 

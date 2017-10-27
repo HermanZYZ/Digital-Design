@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/VGA/divider.xst" -ofn "C:/VGA/divider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-3 divider.ngc divider.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -global_opt off -mt off -ir off -pr off -lc off -power off -o divider_map.ncd divider.ngd divider.pcf 

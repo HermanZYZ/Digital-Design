@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Sat Dec 24 16:55:47 2016
+# Process ID: 12388
+# Current directory: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12172 C:\Users\ZYZ\Desktop\CCCCC\Gluttonous Snake\Gluttonous Snake\Gluttonous Snake.xpr
+# Log file: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/vivado.log
+# Journal file: C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/Gluttonous Snake.xpr}
+INFO: [Project 1-313] Project file moved from 'G:/Gluttonous Snake/Gluttonous Snake' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'Gluttonous Snake.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.3/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 737.516 ; gain = 141.422
+ERROR: [Vivado 12-106] *** Exception: java.lang.ArrayIndexOutOfBoundsException: -1 (See C:/Users/ZYZ/Desktop/CCCCC/Gluttonous Snake/Gluttonous Snake/vivado_pid12388.debug)
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 24 19:32:55 2016...
